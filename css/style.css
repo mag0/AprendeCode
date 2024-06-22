@@ -1,3 +1,11 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
 main{
     background-image: linear-gradient(#422D47 0%, #4F415A 28%,#516D82 79%);
 }
@@ -5,6 +13,23 @@ main{
 header{
     background-color: #A4AF93;
     color: white;
+    padding: .5em 2em;
+    font-size: 1.2em;
+}
+
+header h1{
+    font-size: 1.1em;
+    cursor: pointer;
+}
+
+li{
+    color: white;
+    padding: 0 1em;
+    font-weight: 700;
+}
+
+li:hover{
+    color: black;
 }
 
 button{
@@ -26,9 +51,10 @@ button:hover{
 
 .container-cursos{
     display: grid;
-    grid-template-columns: repeat(3, 20%);
+    grid-template-columns: repeat(3, 25%);
     justify-content: center;
     gap: 2em;
+    font-size: .8em;
 }
 
 .card{
@@ -46,22 +72,22 @@ button:hover{
 }
 
 .container-opiniones{
-    padding: 2em;
+    padding: 1em;
     display: flex;
     justify-content: space-around;
     align-items: center;
-    margin: 0 18em;
+    gap: 2em;
+    margin: 0 5em;
 }
 
 .container-opiniones .card{
-    height: 25em;
-    width: 20em;
+    width: 18em;
+    padding: 1em;
 }
 
 .container-opiniones button{
     border-radius: 50%;
-    height: 4em;
-    width: 4em;
+    padding: 1em;
 }
 
 .container-comunidad{
@@ -69,13 +95,44 @@ button:hover{
     grid-template-columns: repeat(2, 20%);
     justify-content: center;
     align-items: center;
-    flex-direction: column;
+    gap: 2em;
+}
+
+.container-comunidad .card .imagen{
+    width: 100%;
 }
 
 .container-comunidad div{
     display: flex;
     justify-content: center;
     flex-direction: column;
-    margin: 1em;
-    
+}
+
+.texto-preguntas{
+    border-radius: 20px;
+    font-size: .8em;
+}
+
+.texto-preguntas h2{
+   font-weight: 900;
+}
+
+.texto-preguntas p{
+    font-weight: 0;
+}
+
+.superior{
+    padding: 0em 1em;
+}
+
+footer img{
+    height: 1em;
+    width: 1em;
+}
+
+.horizontal-line {
+    width: calc(100% - 40px); /* Ajusta este valor según el espacio deseado desde los bordes */
+    height: 3px; /* Ajusta la altura de la línea */
+    margin: 20px auto; /* Espacio superior e inferior y centrado horizontalmente */
+    background: linear-gradient(to right, white, black);
 }
