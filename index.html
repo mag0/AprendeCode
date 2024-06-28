@@ -23,133 +23,64 @@
             font-weight: 700;
             line-height: normal;
         }
+
+        .navbar-nav .nav-item:hover .nav-link {
+            color: black !important;
+        }
     </style>
 </head>
 
 <body>
 
-    <header class="d-flex justify-content-between align-items-center">
-        <div onclick="window.location.href='../index.html'"
-            class="logo d-flex justify-content-between align-items-center">
-            <div class="imagen" style="cursor: pointer;"><img src="img/Logo-TP-Visualizacion-White.png" alt=""
-                    style="width: 76px; height: 80%;">
-            </div>
-            <h1 class="nombre">AprendeCode</h1>
+    <header class="d-flex flex-column flex-md-row justify-content-between align-items-center py-3 px-4 text-white">
+        <div onclick="window.location.href='../index.html'" class="d-flex align-items-center mb-3 mb-md-0"
+            style="cursor: pointer;">
+            <img src="../img/Logo-TP-Visualizacion-White.png" alt="Logo AprendeCode" style="width: 76px; height: auto;">
+            <h1 class="ms-3 mb-0">AprendeCode</h1>
         </div>
-        <nav class="navbar">
-            <ul class="d-flex justify-content-between">
-                <li class="nav-item">
-                    <a class="nav-link active vistas" aria-current="page" href="/pages/cursos.html">Cursos</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Comunidad</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">FAQS</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="/pages/sesion.html">Inicio sesión</a>
-                </li>
-            </ul>
+        <nav class="navbar navbar-expand-md">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon bg-light"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active text-white" aria-current="page" href="/pages/cursos.html">Cursos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="/pages/comunidad.html">Comunidad</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#">FAQS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="/pages/sesion.html">Inicio sesión</a>
+                    </li>
+                </ul>
+            </div>
         </nav>
     </header>
 
     <main class="font-main">
-        <section style="padding: 4em;">
-            <div class="d-flex justify-content-center align-items-center"
-                style="padding: 2em;color: white;font-size: 1.2em;">
-                <div style="display: flex;justify-content: center;">
-                    <div style="width: 30em; height: 20em;">
-                        <img src="img/undraw_team_collaboration_re_ow29 (1).svg" style="width: 70%; height: 100%;"
-                            alt="">
-                    </div>
-                </div>
 
-                <div style="padding-left: 2em;width: 30em;">
-                    <h2>
-                        Impulsa tus proyectos con la
-                        fuerza de la comunidad!
-                    </h2>
-                    <p>
-                        Aprende, colabora y crece con nuestros
-                        cursos de programación online
-                    </p>
-                    <div style="text-align: end">
-                        <button>Comenza tu viaje!</button>
-                    </div>
-
-                </div>
-            </div>
-        </section>
-
-        <section>
-            <h1 style="text-align: center;color: white;font-size: 4em;margin: 2em 0;">Algunos de nuestros cursos</h1>
-
+        <section class="py-5">
             <div class="container">
-                <div class="container text-center">
-                    <div class="row">
-                        <div class="col">
-                            <div class="card">
-                                <img src="img/close-up-smiley-man-library.jpg" class="card-img-top" alt="...">
-                                <div class="card-body">
-                                    <h3>Emiliano Vargas</h3>
-                                    <h5>Mentor de codigo</h5>
-                                    <h2>Fundamentos de la programación web</h2>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="card">
-                                <img src="img/close-up-smiley-man-library.jpg" class="card-img-top" alt="...">
-                                <div class="card-body">
-                                    <h3>Emiliano Vargas</h3>
-                                    <h5>Mentor de codigo</h5>
-                                    <h2>Fundamentos de la programación web</h2>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="card">
-                                <img src="img/close-up-smiley-man-library.jpg" class="card-img-top" alt="...">
-                                <div class="card-body">
-                                    <h3>Emiliano Vargas</h3>
-                                    <h5>Mentor de codigo</h5>
-                                    <h2>Fundamentos de la programación web</h2>
-                                </div>
-                            </div>
-                        </div>
+                <div class="row align-items-center">
+                    <div class="col-md-6">
+                        <img src="img/undraw_team_collaboration_re_ow29 (1).svg" class="img-fluid"
+                            alt="Imagen de colaboración">
                     </div>
-
-
-                    <div class="row">
-                        <div class="col">
-                            <div class="card">
-                                <img src="img/close-up-smiley-man-library.jpg" class="card-img-top" alt="...">
-                                <div class="card-body">
-                                    <h3>Emiliano Vargas</h3>
-                                    <h5>Mentor de codigo</h5>
-                                    <h2>Fundamentos de la programación web</h2>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="card">
-                                <img src="img/close-up-smiley-man-library.jpg" class="card-img-top" alt="...">
-                                <div class="card-body">
-                                    <h3>Emiliano Vargas</h3>
-                                    <h5>Mentor de codigo</h5>
-                                    <h2>Fundamentos de la programación web</h2>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="card">
-                                <img src="img/close-up-smiley-man-library.jpg" class="card-img-top" alt="...">
-                                <div class="card-body">
-                                    <h3>Emiliano Vargas</h3>
-                                    <h5>Mentor de codigo</h5>
-                                    <h2>Fundamentos de la programación web</h2>
-                                </div>
+                    <div class="col-md-6 mt-4 mt-md-0">
+                        <div class="text-white" style="font-size: 1.2em;">
+                            <h2 class="mb-4">
+                                Impulsa tus proyectos con la fuerza de la comunidad!
+                            </h2>
+                            <p class="mb-4">
+                                Aprende, colabora y crece con nuestros cursos de programación online.
+                            </p>
+                            <div class="text-end">
+                                <button>Comienza tu viaje!</button>
                             </div>
                         </div>
                     </div>
@@ -157,7 +88,79 @@
             </div>
         </section>
 
+
         <section>
+
+            <h2 style="text-align: center;color: white;font-size: 2em;margin: 2em 0;">Algunos de nuestros cursos</h2>
+
+            <div class="container py-5">
+                <div class="row row-cols-1 row-cols-md-3 g-4">
+                    <div class="col">
+                        <div class="card">
+                            <img src="img/close-up-smiley-man-library.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h3>Emiliano Vargas</h3>
+                                <h5>Mentor de código</h5>
+                                <h2>Fundamentos de la programación web</h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card">
+                            <img src="img/close-up-smiley-man-library.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h3>Emiliano Vargas</h3>
+                                <h5>Mentor de código</h5>
+                                <h2>Fundamentos de la programación web</h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card">
+                            <img src="img/close-up-smiley-man-library.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h3>Emiliano Vargas</h3>
+                                <h5>Mentor de código</h5>
+                                <h2>Fundamentos de la programación web</h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card">
+                            <img src="img/close-up-smiley-man-library.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h3>Emiliano Vargas</h3>
+                                <h5>Mentor de código</h5>
+                                <h2>Fundamentos de la programación web</h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card">
+                            <img src="img/close-up-smiley-man-library.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h3>Emiliano Vargas</h3>
+                                <h5>Mentor de código</h5>
+                                <h2>Fundamentos de la programación web</h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card">
+                            <img src="img/close-up-smiley-man-library.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h3>Emiliano Vargas</h3>
+                                <h5>Mentor de código</h5>
+                                <h2>Fundamentos de la programación web</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- <section>
             <h1 style="text-align: center;color: white;font-size: 4em;margin: 2em 0;">Que dicen de nuestros cursos</h1>
             <div class="container-opiniones">
                 <button>
@@ -206,42 +209,44 @@
                 </div>
                 <button><i class="fas fa-chevron-right"></i></button>
             </div>
-        </section>
+        </section> -->
 
         <section>
-            <h2 style="text-align: center;color: white;font-size: 4em;margin: 2em 0;">Que ofrecemos en nuestra comunidad
+            <h2 style="text-align: center;color: white;font-size: 2em;margin: 2em 0;">Que ofrecemos en nuestra comunidad
             </h2>
             <div class="container text-center">
-                <div class="row">
-                    <div class="col">
+                <div class="row row-cols-1 row-cols-md-2 g-4">
+                    <div class="col mb-4">
                         <div class="card">
-                            <img src="img/undraw_public_discussion_re_w9up.svg" class="card-img-top" alt="...">
+                            <img src="img/undraw_public_discussion_re_w9up.svg" class="card-img-top"
+                                alt="Imagen de Foro de discusión">
                             <div class="card-body">
                                 <h3 class="card-title">Foro de discusión</h3>
                             </div>
                         </div>
                     </div>
-                    <div class="col">
+                    <div class="col mb-4">
                         <div class="card">
-                            <img src="img/undraw_scrum_board_re_wk7v.svg" class="card-img-top" alt="...">
+                            <img src="img/undraw_scrum_board_re_wk7v.svg" class="card-img-top"
+                                alt="Imagen de Grupos de estudio">
                             <div class="card-body">
                                 <h3 class="card-title">Grupos de estudio</h3>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="row">
-                    <div class="col">
+                    <div class="col mb-4">
                         <div class="card">
-                            <img src="img/undraw_community_re_cyrm.svg" class="card-img-top" alt="...">
+                            <img src="img/undraw_community_re_cyrm.svg" class="card-img-top"
+                                alt="Imagen de Blog de la comunidad">
                             <div class="card-body">
                                 <h3 class="card-title">Blog de la comunidad</h3>
                             </div>
                         </div>
                     </div>
-                    <div class="col">
+                    <div class="col mb-4">
                         <div class="card">
-                            <img src="img/undraw_teacher_re_sico.svg" class="card-img-top" alt="...">
+                            <img src="img/undraw_teacher_re_sico.svg" class="card-img-top"
+                                alt="Imagen de Mentores y tutores">
                             <div class="card-body">
                                 <h3 class="card-title">Mentores y tutores</h3>
                             </div>
@@ -249,106 +254,104 @@
                     </div>
                 </div>
             </div>
+
         </section>
 
-        <section>
-            <h2 style="text-align: center;color: white; font-size: 4em;margin: 2em 0;">Preguntas frecuentes</h2>
-            <div class="d-flex justify-content-center align-items-center"
-                style="padding: 2em;color: white;font-size: 1.2em;">
-                <div style="display: flex;justify-content: center;width: 50%;">
-                    <div>
-                        <img src="img/undraw_searching_re_3ra9.svg" alt="">
+        <section class="py-5">
+            <div class="container">
+                <h2 style="text-align: center;color: white;font-size: 2em;margin: 2em 0;">Preguntas frecuentes
+                </h2>
+                <div class="row align-items-center">
+                    <div class="col-lg-6">
+                        <img src="img/undraw_searching_re_3ra9.svg" class="img-fluid" alt="Ilustración de búsqueda">
                     </div>
-                </div>
-
-                <div class="texto-preguntas" style="padding:2em;background-color: #DBEBC3;color: black;width: 50%;">
-                    <h2>
-                        ¿Cómo me inscribo en un curso?
-                    </h2>
-                    <p>
-                        Para inscribirte en un curso, selecciona el curso de tu interés en
-                        la página de cursos, haz clic en el botón "Inscribirse" y sigue las
-                        instrucciones para completar el proceso de inscripción.
-                    </p>
-                    <h2>
-                        ¿Puedo acceder a los cursos desde cualquier dispositivo?
-                    </h2>
-                    <p>
-                        Sí, nuestros cursos son accesibles desde cualquier dispositivo con
-                        conexión a Internet, ya sea una computadora, tablet o smartphone.
-                    </p>
-                    <h2>
-                        ¿Ofrecen certificaciones al finalizar el curso?
-                    </h2>
-                    <p>
-                        Sí, muchos de nuestros cursos ofrecen certificados de finalización
-                        que puedes descargar e imprimir una vez que completes todos los requisitos del curso.
-                    </p>
-                    <h2>
-                        ¿Hay asistencia disponible si tengo preguntas durante el curso?
-                    </h2>
-                    <p>
-                        Sí, contamos con un equipo de soporte y foros de discusión donde puedes
-                        hacer preguntas y obtener ayuda de instructores y compañeros de curso.
-                    </p>
+                    <div class="col-lg-6 mt-4 mt-lg-0">
+                        <div class="texto-preguntas p-4 text-dark" style="background-color: #DBEBC3;">
+                            <h3 class="mb-4">¿Cómo me inscribo en un curso?</h3>
+                            <p>
+                                Para inscribirte en un curso, selecciona el curso de tu interés en
+                                la página de cursos, haz clic en el botón "Inscribirse" y sigue las
+                                instrucciones para completar el proceso de inscripción.
+                            </p>
+                            <h3 class="mt-5 mb-4">¿Puedo acceder a los cursos desde cualquier dispositivo?</h3>
+                            <p>
+                                Sí, nuestros cursos son accesibles desde cualquier dispositivo con
+                                conexión a Internet, ya sea una computadora, tablet o smartphone.
+                            </p>
+                            <h3 class="mt-5 mb-4">¿Ofrecen certificaciones al finalizar el curso?</h3>
+                            <p>
+                                Sí, muchos de nuestros cursos ofrecen certificados de finalización
+                                que puedes descargar e imprimir una vez que completes todos los requisitos del curso.
+                            </p>
+                            <h3 class="mt-5 mb-4">¿Hay asistencia disponible si tengo preguntas durante el curso?</h3>
+                            <p>
+                                Sí, contamos con un equipo de soporte y foros de discusión donde puedes
+                                hacer preguntas y obtener ayuda de instructores y compañeros de curso.
+                            </p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
 
-        <section>
-            <h2 style="margin: 2em 0;"></h2>
-            <section style="padding: 4em;">
-                <div class="d-flex justify-content-center align-items-center"
-                    style="padding: 2em;color: white;font-size: 1.2em;">
-                    <div style="display: flex;justify-content: center;">
-                        <div style="width: 20em; height: 20em;">
-                            <img src="img/undraw_version_control_re_mg66 (1).svg" style="width: 100%; height: 100%;"
-                                alt="">
-                        </div>
+
+        <section style="margin: 6em 0;" class="py-5">
+            <div class="container">
+                <div class="row justify-content-center align-items-center">
+                    <div class="col-lg-6 order-lg-1">
+                        <img src="img/undraw_version_control_re_mg66 (1).svg" class="img-fluid"
+                            alt="Ilustración de control de versiones">
                     </div>
-
-                    <div class="d-flex justify-content-center align-items-center flex-column"
-                        style="padding-left: 2em;width: 30em;">
-                        <h2 style="font-size: 2.2em;">
-                            El Mejor Momento es Hoy!
-                        </h2>
-                        <p>
-                            El primer paso hacia tus metas empieza ahora, no lo pospongas.
-                        </p>
-                        <div>
-                            <button>Comienza tu viaje!</button>
+                    <div class="col-lg-6 mt-4 mt-lg-0 order-lg-2">
+                        <div class="d-flex justify-content-center align-items-center flex-column">
+                            <h2 style="font-size: 2.2em; text-align: center;">
+                                El Mejor Momento es Hoy!
+                            </h2>
+                            <p style="text-align: center;">
+                                El primer paso hacia tus metas empieza ahora, no lo pospongas.
+                            </p>
+                            <div style="text-align: center;">
+                                <button>Comienza tu viaje!</button>
+                            </div>
                         </div>
-
                     </div>
                 </div>
-            </section>
+            </div>
+        </section>
 
-            <footer>
-                <div class="superior d-flex justify-content-between align-items-center">
-                    <div class="politica d-flex justify-content-around align-items-center" style="color: white;">
-                        <h4 style="padding: 0 .5em;">Politica Privacidad</h4>
-                        <h5 style="padding: 0 .5em;">Politica Cookies</h5>
-                        <h6 style="padding: 0 .5em;">Aviso legal</h6>
+
+        <footer>
+            <div class="container-fluid">
+                <div class="superior d-flex flex-column flex-md-row justify-content-between align-items-center">
+                    <div
+                        class="politica d-flex flex-wrap justify-content-center justify-content-md-start align-items-center text-center text-md-start mb-3 mb-md-0">
+                        <h4 class="mb-0 me-md-3">Politica Privacidad</h4>
+                        <h5 class="mb-0 me-md-3">Politica Cookies</h5>
+                        <h6 class="mb-0 me-md-3">Aviso legal</h6>
                     </div>
-                    <div class="iconos d-flex justify-content-around align-items-center">
-                        <img style="margin: 0 .2em;" src="img/facebook.png" alt="">
-                        <img style="margin: 0 .2em;" src="img/instagram.png" alt="">
-                        <img style="margin: 0 .2em;" src="img/linkedin-logo.png" alt="">
+                    <div class="iconos d-flex justify-content-center justify-content-md-end align-items-center">
+                        <img style="margin: 0 .5em;" src="../img/facebook.png" alt="Facebook">
+                        <img style="margin: 0 .5em;" src="../img/instagram.png" alt="Instagram">
+                        <img style="margin: 0 .5em;" src="../img/linkedin-logo.png" alt="LinkedIn">
                     </div>
                 </div>
                 <div class="horizontal-line"></div>
-                <div class="superior d-flex justify-content-between align-items-center">
-                    <div class="politica d-flex justify-content-around align-items-center" style="color: white;">
-                        <div class="imagen"><img src="img/Logo-TP-Visualizacion-White.png" alt=""
+                <div class="inferior d-flex flex-column flex-md-row justify-content-md-between align-items-center">
+                    <div
+                        class="politica d-flex justify-content-center justify-content-md-start align-items-center mb-3 mb-md-0">
+                        <div class="imagen">
+                            <img src="../img/Logo-TP-Visualizacion-White.png" alt="Logo AprendeCode"
                                 style="width: 76px; height: 70px;">
                         </div>
-                        <h5 class="nombre">AprendeCode</h5>
+                        <h5 class="nombre ms-3 mb-0">AprendeCode</h5>
                     </div>
-                    <div class="iconos d-flex justify-content-around align-items-center">
-                        <p style="font-size: .8em;">© Copyright AprendeCode 2024</p>
+                    <div class="iconos d-flex justify-content-center justify-content-md-end align-items-center">
+                        <p class="mb-0 text-center text-md-end" style="font-size: .8em;">© Copyright AprendeCode 2024
+                        </p>
                     </div>
                 </div>
-            </footer>
+            </div>
+        </footer>
     </main>
 
 
