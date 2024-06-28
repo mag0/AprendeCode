@@ -4,12 +4,21 @@
     box-sizing: border-box;
     text-decoration: none;
     list-style: none;
+    
+    
+}
+.body{
+    border-radius: 57px 48px 20px 20px;
+    background: linear-gradient(180deg, #422D47 0%, #4F415A 28.5%, #516D82 78.5%);  
 }
 
-main{
-    background-image: linear-gradient(#422D47 0%, #4F415A 28%,#516D82 79%);
+.font-core{
+    font-family: "Nunito", serif;
 }
-
+.subtitles{
+    font-weight: lighter ;
+    font-style: italic;
+}
 header{
     background-color: #A4AF93;
     color: white;
@@ -39,8 +48,11 @@ button{
     padding: .2em 1em;
     color: white;
     margin: 1em 0;
-    font-size: 1.1em;
+    font-size: 1.3em;
+    font-weight: bold;
     transition: all .5s;
+    width: 350px;
+    height: 45px;
 }
 
 button:hover{
@@ -121,10 +133,6 @@ button:hover{
     font-weight: 0;
 }
 
-.superior{
-    padding: 0em 1em;
-}
-
 footer img{
     height: 1em;
     width: 1em;
@@ -136,3 +144,186 @@ footer img{
     margin: 20px auto; /* Espacio superior e inferior y centrado horizontalmente */
     background: linear-gradient(to right, white, black);
 }
+
+.title-cta{
+    font-weight: bold;
+}
+
+.nav-title{
+    font-weight: bold;
+    font-size: 30px;
+}
+.titles-section{
+    text-align: center;
+    color: white;
+    font-size: 64px;
+    font-weight: bold;
+    margin-top: 100px;
+}
+
+.card-img-top{
+    width: 300px;
+    height: 300px;
+}
+
+.comunity{
+    width: 400px;
+    height: 400px;
+}
+
+#curso{
+    margin-bottom: 30px;
+}
+
+#title-mini{
+    color: #000;
+    font-family: Nunito;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.p-faqs{
+    color: #000;
+    font-family: Nunito;
+    font-size: 20px;
+    font-style: italic;
+    font-weight: 300;
+    line-height: normal;
+}
+
+.img-cta-top{
+    width: 663.873px;
+
+    flex-shrink: 0;
+}
+
+.cta-footer-title{
+    width: 900px;
+    color: #FFF;
+    font-family: Nunito;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.ElPrimerPasoHaciaTusMetasEmpiezaAhoraNoLoPospongas{
+    width: 900px;
+    color: white; 
+    font-size: 27px; 
+    font-family: Nunito; 
+    font-style: italic;
+    font-weight: 700;
+    word-wrap: break-word;
+    margin-bottom: 20px;
+}
+
+.group-child {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    border-radius: 10px;
+    background-color: #aabc8f;
+    width: 145.1%;
+    height: 147px;
+}
+.group-item {
+    position: absolute;
+    top: 64px;
+    left: 0px;
+    border-radius: 10px;
+    background-color: #8e9c77;
+    width: 145.1%;
+    height: 83px;
+}
+.rectangle-parent {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 1280px;
+    height: 147px;
+}
+.politica-privacidad {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+.politica-cookies {
+    position: absolute;
+    top: 0px;
+    left: 227px;
+}
+.aviso-legal {
+    position: absolute;
+    top: 0px;
+    left: 419px;
+}
+.linkedin-logo-icon {
+    position: absolute;
+    top: 0px;
+    left: 98px;
+    width: 31px;
+    height: 31px;
+    object-fit: cover;
+}
+.facebook-icon {
+    position: absolute;
+    top: 0px;
+    left: 50px;
+    width: 31px;
+    height: 31px;
+    object-fit: cover;
+}
+.instagram-icon {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 31px;
+    height: 31px;
+    object-fit: cover;
+}
+.linkedin-logo-parent {
+    position: absolute;
+    top: 0px;
+    left: 1665px;
+    width: 129px;
+    height: 31px;
+}
+.aprendecode {
+    position: absolute;
+    top: 66px;
+    left: 61px;
+}
+.copyright-aprendecode-2024 {
+    position: absolute;
+    top: 64px;
+    left: 1465px;
+    color: #000;
+}
+.logo-tp-visualizacion-white-2-icon {
+    position: absolute;
+    top: 54px;
+    left: 0px;
+    width: 61px;
+    height: 53px;
+    object-fit: cover;
+}
+.politica-privacidad-parent {
+    position: absolute;
+    top: 20px;
+    left: 24px;
+    width: 97%;
+    height: 107px;
+}
+.group-parent {
+    width: 100%;
+    position: relative;
+    height: 147px;
+    text-align: left;
+    font-size: 24px;
+    color: #fff;
+    font-family: 'Inria Sans';
+}
+
