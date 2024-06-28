@@ -28,84 +28,102 @@
 
 <body>
 
-    <header class="d-flex justify-content-between align-items-center">
-        <div onclick="window.location.href='../index.html'"
-            class="logo d-flex justify-content-between align-items-center">
-            <div class="imagen" style="cursor: pointer;"><img src="../img/Logo-TP-Visualizacion-White.png" alt=""
-                    style="width: 76px; height: 80%;">
-            </div>
-            <h1 class="nombre" style="text-decoration: none;color: white;">AprendeCode</h1>
+    <header class="d-flex flex-column flex-md-row justify-content-between align-items-center py-3 px-4 text-white">
+        <div onclick="window.location.href='../index.html'" class="d-flex align-items-center mb-3 mb-md-0"
+            style="cursor: pointer;">
+            <img src="../img/Logo-TP-Visualizacion-White.png" alt="Logo AprendeCode" style="width: 76px; height: auto;">
+            <h1 class="ms-3 mb-0">AprendeCode</h1>
         </div>
-        <nav class="navbar">
-            <ul class="d-flex justify-content-between">
-                <li class="nav-item">
-                    <a class="nav-link active vistas" aria-current="page" href="/pages/cursos.html">Cursos</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Comunidad</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">FAQS</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Inicio sesión</a>
-                </li>
-            </ul>
+        <nav class="navbar navbar-expand-md">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon bg-light"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="/pages/cursos.html">Cursos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Comunidad</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">FAQS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Inicio sesión</a>
+                    </li>
+                </ul>
+            </div>
         </nav>
     </header>
 
     <main class="font-main">
-        <section style="padding: 4em;margin: 0 4em;">
-            <h2 style="text-align: start;color: white;font-size: 2em;margin: 1em 0;">Algunos de nuestros cursos</h2>
-            <div style="flex-direction: row;background-color: #FFF3B5;border-radius: 20px;height: 18em;"
-                class="card d-flex justify-content-around align-items-center">
-                <div style="margin-left: 5em;">
-                    <img style="width: 8em; height: 8em;border-radius: 50%;"
-                        src="../img/close-up-smiley-man-library.jpg" class="card-img-top" alt="...">
+        <section class="py-4 mx-4">
+            <h2 class="text-start text-white fs-2 my-4">Algunos de nuestros cursos</h2>
+            <div class="card d-flex flex-column flex-md-row align-items-center p-4 rounded-4"
+                style="background-color: #FFF3B5;">
+                <div class="d-flex flex-column align-items-center m-md-5 m-3 gap-3">
+                    <img src="../img/close-up-smiley-man-library.jpg" class="card-img-top rounded-circle"
+                        style="width: 8em; height: 8em;" alt="Emiliano Vargas">
                     <h3>Emiliano Vargas</h3>
                     <h5>Mentor de Código</h5>
                 </div>
-                <div style="text-align: start;background-color: #DED39B;margin: 0 5em;border-radius: 20px;height: 100%;"
-                    class="card-body d-flex justify-content-center align-items-sta flex-column">
-                    <p class="card-title">Fundamentos de la Programación Web</p>
-                    <h5 style="margin: 1em 0 2em 0;" class="card-text">Aprende los conceptos básicos de la programación
-                        web y
-                        desarrolla las habilidades necesarias para crear sitios web dinámicos y
-                        funcionales. Este curso abarca HTML, CSS, y JavaScript, proporcionando
-                        una base sólida para tu carrera en desarrollo web..</h5>
-                    <div style="display: flex;align-items: end;justify-content: end;">
-                        <a href="#" style="background-color: #AABC8F;color: white;" class="btn">Comenzar curso</a>
+                <div class="card-body text-start p-4 rounded-4 w-100" style="background-color: #DED39B;">
+                    <p class="card-title fs-4">Fundamentos de la Programación Web</p>
+                    <h5 class="card-text my-4">Aprende los conceptos básicos de la programación web y desarrolla las
+                        habilidades necesarias para crear sitios web dinámicos y funcionales. Este curso abarca HTML,
+                        CSS, y JavaScript, proporcionando una base sólida para tu carrera en desarrollo web.</h5>
+                    <div class="d-flex justify-content-end">
+                        <a href="#" class="btn text-white" style="background-color: #AABC8F;">Comenzar curso</a>
                     </div>
                 </div>
             </div>
         </section>
 
+        <h2 class="text-center text-white" style="margin: 8rem 0;font-size: 3em;">Proximamente muchos mas!</h2>
+
         <footer>
-            <div class="superior d-flex justify-content-between align-items-center">
-                <div class="politica d-flex justify-content-around align-items-center" style="color: white;">
-                    <h4 style="padding: 0 .5em;">Politica Privacidad</h4>
-                    <h5 style="padding: 0 .5em;">Politica Cookies</h5>
-                    <h6 style="padding: 0 .5em;">Aviso legal</h6>
-                </div>
-                <div class="iconos d-flex justify-content-around align-items-center">
-                    <img style="margin: 0 .2em;" src="../img/facebook.png" alt="">
-                    <img style="margin: 0 .2em;" src="../img/instagram.png" alt="">
-                    <img style="margin: 0 .2em;" src="../img/linkedin-logo.png" alt="">
-                </div>
-            </div>
-            <div class="horizontal-line"></div>
-            <div class="superior d-flex justify-content-between align-items-center">
-                <div class="politica d-flex justify-content-around align-items-center" style="color: white;">
-                    <div class="imagen"><img src="../img/Logo-TP-Visualizacion-White.png" alt=""
-                            style="width: 76px; height: 70px;">
+            <div class="container-fluid">
+                <!-- Sección superior del footer -->
+                <div class="superior d-flex flex-column flex-md-row justify-content-between align-items-center">
+                    <!-- Grupo de enlaces y políticas -->
+                    <div
+                        class="politica d-flex flex-wrap justify-content-center justify-content-md-start align-items-center text-center text-md-start mb-3 mb-md-0">
+                        <h4 class="mb-0 me-md-3">Politica Privacidad</h4>
+                        <h5 class="mb-0 me-md-3">Politica Cookies</h5>
+                        <h6 class="mb-0 me-md-3">Aviso legal</h6>
                     </div>
-                    <h5 class="nombre">AprendeCode</h5>
+                    <!-- Iconos de redes sociales -->
+                    <div class="iconos d-flex justify-content-center justify-content-md-end align-items-center">
+                        <img style="margin: 0 .5em;" src="../img/facebook.png" alt="Facebook">
+                        <img style="margin: 0 .5em;" src="../img/instagram.png" alt="Instagram">
+                        <img style="margin: 0 .5em;" src="../img/linkedin-logo.png" alt="LinkedIn">
+                    </div>
                 </div>
-                <div class="iconos d-flex justify-content-around align-items-center">
-                    <p style="font-size: .8em;">© Copyright AprendeCode 2024</p>
+                <!-- Línea horizontal -->
+                <div class="horizontal-line"></div>
+                <!-- Sección inferior del footer -->
+                <div class="inferior d-flex flex-column flex-md-row justify-content-md-between align-items-center">
+                    <!-- Logo y nombre de la empresa -->
+                    <div
+                        class="politica d-flex justify-content-center justify-content-md-start align-items-center mb-3 mb-md-0">
+                        <div class="imagen">
+                            <img src="../img/Logo-TP-Visualizacion-White.png" alt="Logo AprendeCode"
+                                style="width: 76px; height: 70px;">
+                        </div>
+                        <h5 class="nombre ms-3 mb-0">AprendeCode</h5>
+                    </div>
+                    <!-- Aviso de derechos de autor -->
+                    <div class="iconos d-flex justify-content-center justify-content-md-end align-items-center">
+                        <p class="mb-0 text-center text-md-end" style="font-size: .8em;">© Copyright AprendeCode 2024
+                        </p>
+                    </div>
                 </div>
             </div>
         </footer>
+
+
     </main>
 
 
