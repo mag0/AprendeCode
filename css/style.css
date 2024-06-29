@@ -1,47 +1,48 @@
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
     text-decoration: none;
     list-style: none;
-    
-    
-}
-.body{
-    border-radius: 57px 48px 20px 20px;
-    background: linear-gradient(180deg, #422D47 0%, #4F415A 28.5%, #516D82 78.5%);  
 }
 
-.font-core{
+.body {
+    border-radius: 57px 48px 20px 20px;
+    background: linear-gradient(180deg, #422D47 0%, #4F415A 28.5%, #516D82 78.5%);
+}
+
+.font-core {
     font-family: "Nunito", serif;
 }
-.subtitles{
-    font-weight: lighter ;
+
+.subtitles {
+    font-weight: lighter;
     font-style: italic;
 }
-header{
+
+header {
     background-color: #A4AF93;
     color: white;
     padding: .5em 2em;
     font-size: 1.2em;
 }
 
-header h1{
+header h1 {
     font-size: 1.1em;
     cursor: pointer;
 }
 
-li{
+li {
     color: white;
     padding: 0 1em;
     font-weight: 700;
 }
 
-li:hover{
+li:hover {
     color: black;
 }
 
-button{
+button {
     border-radius: 10px;
     border: none;
     background-color: #A4AF93;
@@ -55,22 +56,14 @@ button{
     height: 45px;
 }
 
-button:hover{
+button:hover {
     transition: all .5s;
     background-color: white;
     color: #A4AF93;
 }
 
-.container-cursos{
-    display: grid;
-    grid-template-columns: repeat(3, 25%);
-    justify-content: center;
-    gap: 2em;
-    font-size: .8em;
-}
-
-.card{
-    background-color:#DBEBC3;
+.card {
+    background-color: #DBEBC3;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -79,11 +72,11 @@ button:hover{
     border-radius: 20px;
 }
 
-.card .imagen{
+.card .imagen {
     margin-bottom: 1em;
 }
 
-.container-opiniones{
+.container-opiniones {
     padding: 1em;
     display: flex;
     justify-content: space-around;
@@ -92,68 +85,69 @@ button:hover{
     margin: 0 5em;
 }
 
-.container-opiniones .card{
+.container-opiniones .card {
     width: 18em;
     padding: 1em;
 }
 
-.container-opiniones button{
+.container-opiniones button {
     border-radius: 50%;
     padding: 1em;
 }
 
-.container-comunidad{
+.container-comunidad {
     display: grid;
-    grid-template-columns: repeat(2, 20%);
+    grid-template-columns: repeat(2, 1fr);
     justify-content: center;
     align-items: center;
     gap: 2em;
 }
 
-.container-comunidad .card .imagen{
+.container-comunidad .card .imagen {
     width: 100%;
 }
 
-.container-comunidad div{
+.container-comunidad div {
     display: flex;
     justify-content: center;
     flex-direction: column;
 }
 
-.texto-preguntas{
+.texto-preguntas {
     border-radius: 20px;
     font-size: .8em;
 }
 
-.texto-preguntas h2{
-   font-weight: 900;
+.texto-preguntas h2 {
+    font-weight: 900;
 }
 
-.texto-preguntas p{
+.texto-preguntas p {
     font-weight: 0;
 }
 
-footer img{
+footer img {
     height: 1em;
     width: 1em;
 }
 
 .horizontal-line {
-    width: calc(100% - 40px); /* Ajusta este valor según el espacio deseado desde los bordes */
-    height: 3px; /* Ajusta la altura de la línea */
-    margin: 20px auto; /* Espacio superior e inferior y centrado horizontalmente */
+    width: calc(100% - 40px);
+    height: 3px;
+    margin: 20px auto;
     background: linear-gradient(to right, white, black);
 }
 
-.title-cta{
+.title-cta {
     font-weight: bold;
 }
 
-.nav-title{
+.nav-title {
     font-weight: bold;
     font-size: 30px;
 }
-.titles-section{
+
+.titles-section {
     text-align: center;
     color: white;
     font-size: 64px;
@@ -161,21 +155,21 @@ footer img{
     margin-top: 100px;
 }
 
-.card-img-top{
-    width: 300px;
-    height: 300px;
+.card-img-top {
+    width: 100%;
+    height: auto;
 }
 
-.comunity{
-    width: 400px;
-    height: 400px;
+.comunity {
+    width: 100%;
+    height: auto;
 }
 
-#curso{
+#curso {
     margin-bottom: 30px;
 }
 
-#title-mini{
+#title-mini {
     color: #000;
     font-family: Nunito;
     font-size: 24px;
@@ -184,7 +178,7 @@ footer img{
     line-height: normal;
 }
 
-.p-faqs{
+.p-faqs {
     color: #000;
     font-family: Nunito;
     font-size: 20px;
@@ -193,14 +187,13 @@ footer img{
     line-height: normal;
 }
 
-.img-cta-top{
-    width: 663.873px;
-
-    flex-shrink: 0;
+.img-cta-top {
+    width: 100%;
+    height: auto;
 }
 
-.cta-footer-title{
-    width: 900px;
+.cta-footer-title {
+    width: 100%;
     color: #FFF;
     font-family: Nunito;
     font-size: 64px;
@@ -209,11 +202,11 @@ footer img{
     line-height: normal;
 }
 
-.ElPrimerPasoHaciaTusMetasEmpiezaAhoraNoLoPospongas{
-    width: 900px;
-    color: white; 
-    font-size: 27px; 
-    font-family: Nunito; 
+.ElPrimerPasoHaciaTusMetasEmpiezaAhoraNoLoPospongas {
+    width: 100%;
+    color: white;
+    font-size: 27px;
+    font-family: Nunito;
     font-style: italic;
     font-weight: 700;
     word-wrap: break-word;
@@ -229,6 +222,7 @@ footer img{
     width: 145.1%;
     height: 147px;
 }
+
 .group-item {
     position: absolute;
     top: 64px;
@@ -238,6 +232,7 @@ footer img{
     width: 145.1%;
     height: 83px;
 }
+
 .rectangle-parent {
     position: absolute;
     top: 0px;
@@ -245,21 +240,25 @@ footer img{
     width: 1280px;
     height: 147px;
 }
+
 .politica-privacidad {
     position: absolute;
     top: 0px;
     left: 0px;
 }
+
 .politica-cookies {
     position: absolute;
     top: 0px;
     left: 227px;
 }
+
 .aviso-legal {
     position: absolute;
     top: 0px;
     left: 419px;
 }
+
 .linkedin-logo-icon {
     position: absolute;
     top: 0px;
@@ -268,6 +267,7 @@ footer img{
     height: 31px;
     object-fit: cover;
 }
+
 .facebook-icon {
     position: absolute;
     top: 0px;
@@ -276,6 +276,7 @@ footer img{
     height: 31px;
     object-fit: cover;
 }
+
 .instagram-icon {
     position: absolute;
     top: 0px;
@@ -284,6 +285,7 @@ footer img{
     height: 31px;
     object-fit: cover;
 }
+
 .linkedin-logo-parent {
     position: absolute;
     top: 0px;
@@ -291,17 +293,20 @@ footer img{
     width: 129px;
     height: 31px;
 }
+
 .aprendecode {
     position: absolute;
     top: 66px;
     left: 61px;
 }
+
 .copyright-aprendecode-2024 {
     position: absolute;
     top: 64px;
     left: 1465px;
     color: #000;
 }
+
 .logo-tp-visualizacion-white-2-icon {
     position: absolute;
     top: 54px;
@@ -310,6 +315,7 @@ footer img{
     height: 53px;
     object-fit: cover;
 }
+
 .politica-privacidad-parent {
     position: absolute;
     top: 20px;
@@ -317,6 +323,7 @@ footer img{
     width: 97%;
     height: 107px;
 }
+
 .group-parent {
     width: 100%;
     position: relative;
@@ -327,3 +334,47 @@ footer img{
     font-family: 'Inria Sans';
 }
 
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .header, .footer, .main, .container, .row, .col, .card, .button, .nav, .img-cta-top, .comunity, .titles-section, .cta-footer-title, .ElPrimerPasoHaciaTusMetasEmpiezaAhoraNoLoPospongas {
+        width: 100%;
+        padding: 10px;
+        text-align: center;
+    }
+
+    .titles-section {
+        font-size: 40px;
+    }
+
+    .cta-footer-title {
+        font-size: 40px;
+    }
+
+    .button {
+        width: 100%;
+    }
+
+    .card-img-top, .comunity {
+        width: 100%;
+        height: auto;
+    }
+
+    .container-opiniones {
+        flex-direction: column;
+        align-items: center;
+        gap: 1em;
+    }
+
+    .container-comunidad {
+        grid-template-columns: 1fr;
+        gap: 1em;
+    }
+
+    .navbar-nav {
+        text-align: center;
+    }
+
+    .ElPrimerPasoHaciaTusMetasEmpiezaAhoraNoLoPospongas {
+        font-size: 18px;
+    }
+}
