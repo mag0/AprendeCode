@@ -81,8 +81,8 @@ button:hover {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    gap: 2em;
-    margin: 0 5em;
+    gap: 1em;
+    margin: 0 16em;
 }
 
 .container-opiniones .card {
