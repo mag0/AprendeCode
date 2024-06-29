@@ -33,12 +33,33 @@
 
 <body>
 
-    <div class="logo d-flex justify-content-center align-items-center">
-        <div class="imagen" style="cursor: pointer;"><img src="../img/Logo-TP-Visualizacion-White.png" alt=""
-                style="width: 20em; height: 20em;">
+    <div class="sesion logo d-flex justify-content-center align-items-center">
+        <div class="imagen" style="cursor: pointer;"><img src="../img/Logo-TP-Visualizacion-White.png" alt="" style="">
         </div>
-        <h1 style="font-size:5em; color: white;">AprendeCode</h1>
+        <h1 style="color: white;">AprendeCode</h1>
     </div>
+
+    <style>
+        .sesion img {
+            width: 20em;
+            height: 20em;
+        }
+
+        h1 {
+            font-size: 5em;
+        }
+
+        @media (max-width: 767.98px) {
+            h1 {
+                font-size: 2em;
+            }
+
+            .sesion img {
+                width: 10em;
+                height: 10em;
+            }
+        }
+    </style>
 
     <div class="container mt-5">
         <div class="row justify-content-center formulario">
@@ -68,6 +89,7 @@
             </div>
         </div>
     </div>
+
 </body>
 
 </html>

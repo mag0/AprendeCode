@@ -54,16 +54,16 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
-                        <a class="nav-link active text-white" aria-current="page" href="/pages/cursos.html">Cursos</a>
+                        <a class="nav-link active text-white" aria-current="page" href="./cursos.html">Cursos</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-white" href="/pages/comunidad.html">Comunidad</a>
+                        <a class="nav-link text-white" href="./comunidad.html">Comunidad</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link text-white" href="#">FAQS</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-white" href="/pages/sesion.html">Inicio sesión</a>
+                        <a class="nav-link text-white" href="./sesion.html">Inicio sesión</a>
                     </li>
                 </ul>
             </div>
@@ -79,7 +79,7 @@
 
     <main class="font-main">
 
-        <section class="py-4 mx-4" style="padding: 0 6em;">
+        <section class="py-4 mx-4 responsive-section">
             <h2 class="text-start text-white fs-2 my-4">Algunos de nuestros cursos</h2>
             <div class="card d-flex flex-column flex-md-row align-items-center p-4 rounded-4"
                 style="background-color: #FFF3B5;">
@@ -102,35 +102,40 @@
         </section>
 
         <h2 class="text-center text-white" style="margin: 8rem 0;font-size: 3em;">Proximamente muchos mas!</h2>
-
+        <style>
+            h2 {
+                font-size: 1.5em !important;
+            }
+        </style>
         <footer>
-            <div class="container-fluid">
-                <div class="superior d-flex flex-column flex-md-row justify-content-between align-items-center">
+            <div class="container-fluid px-0">
+                <div style="background-color: #aabc8f;"
+                    class="superior d-flex flex-column flex-md-row justify-content-between align-items-center p-3 text-white">
                     <div
                         class="politica d-flex flex-wrap justify-content-center justify-content-md-start align-items-center text-center text-md-start mb-3 mb-md-0">
-                        <h4 class="mb-0 me-md-3">Politica Privacidad</h4>
-                        <h5 class="mb-0 me-md-3">Politica Cookies</h5>
-                        <h6 class="mb-0 me-md-3">Aviso legal</h6>
+                        <h4 class="mb-0 me-md-3 fs-5">Política Privacidad</h4>
+                        <h5 class="mb-0 me-md-3 fs-6">Política Cookies</h5>
+                        <h6 class="mb-0 me-md-3 fs-6">Aviso legal</h6>
                     </div>
                     <div class="iconos d-flex justify-content-center justify-content-md-end align-items-center">
-                        <img style="margin: 0 .5em;" src="../img/facebook.png" alt="Facebook">
-                        <img style="margin: 0 .5em;" src="../img/instagram.png" alt="Instagram">
-                        <img style="margin: 0 .5em;" src="../img/linkedin-logo.png" alt="LinkedIn">
+                        <img class="mx-2" src="../img/facebook.png" alt="Facebook" style="width: 40px; height: 40px;">
+                        <img class="mx-2" src="../img/instagram.png" alt="Instagram" style="width: 40px; height: 40px;">
+                        <img class="mx-2" src="../img/linkedin-logo.png" alt="LinkedIn"
+                            style="width: 40px; height: 40px;">
                     </div>
                 </div>
-                <div class="horizontal-line"></div>
-                <div class="inferior d-flex flex-column flex-md-row justify-content-md-between align-items-center">
+                <div style="background-color: #8e9c77;"
+                    class="inferior d-flex flex-column flex-md-row justify-content-between align-items-center p-3 text-white">
                     <div
                         class="politica d-flex justify-content-center justify-content-md-start align-items-center mb-3 mb-md-0">
                         <div class="imagen">
                             <img src="../img/Logo-TP-Visualizacion-White.png" alt="Logo AprendeCode"
-                                style="width: 76px; height: 70px;">
+                                style="width: 100px; height: 90px;">
                         </div>
-                        <h5 class="nombre ms-3 mb-0">AprendeCode</h5>
+                        <h5 class="nombre ms-3 mb-0 fs-5">AprendeCode</h5>
                     </div>
                     <div class="iconos d-flex justify-content-center justify-content-md-end align-items-center">
-                        <p class="mb-0 text-center text-md-end" style="font-size: .8em;">© Copyright AprendeCode 2024
-                        </p>
+                        <p class="mb-0 text-center text-md-end fs-6">© Copyright AprendeCode 2024</p>
                     </div>
                 </div>
             </div>
