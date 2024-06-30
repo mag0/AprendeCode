@@ -115,11 +115,14 @@ html, body {
     list-style: none;
     display: flex;
     gap: 1rem;
+    margin-bottom: 0;
 }
 
 .navbar-item {
    
 }
+
+
 
 .navbar-link {
     font-family: "Nunito Sans", sans-serif;
