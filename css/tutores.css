@@ -1,0 +1,188 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body { 
+    padding: 0;
+    margin: 0;
+}
+
+.rectangle-div {
+    width: 100%;
+    height: 100%;
+    border-radius: 57px 48px 20px 20px;
+    background: linear-gradient(180deg, #2C2744 0%, #FEACBB 100%);
+}
+
+/* Estilo del navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #BF7096;
+    padding: 1rem;
+    color: #fff;
+}
+
+.navbar-brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.navbar-toggle {
+    display: none; /* Oculta el botón de hamburguesa por defecto */
+    cursor: pointer;
+}
+
+.hamburger-icon {
+    display: block;
+    width: 30px;
+    height: 3px;
+    background-color: #fff;
+    margin: 6px 0;
+    border-radius: 5px;
+    transition: transform 0.3s ease; /* Transición para efecto visual */
+}
+
+.navbar-toggle.active .hamburger-icon {
+    transform: rotate(45deg); /* Rotación del icono al hacer clic */
+}
+
+.navbar-toggle.active .hamburger-icon:before,
+.navbar-toggle.active .hamburger-icon:after {
+    top: 0;
+    transform: rotate(90deg); /* Ajustes para transformación completa */
+}
+
+.navbar-toggle.active .hamburger-icon:after {
+    transform: rotate(-90deg); /* Segunda transformación para la cruz */
+}
+
+.navbar-menu {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+}
+
+.navbar-item {
+   
+}
+
+.navbar-link {
+    font-family: "Nunito Sans", sans-serif;
+    color: #fff;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.navbar-link:hover {
+    background-color: #575757;
+    border-radius: 5px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .navbar-menu {
+        flex-direction: column;
+        width: 100%;
+        display: none; /* Oculta el menú en dispositivos móviles por defecto */
+        position: absolute;
+        top: 5rem; /* Ajusta la posición del menú desplegable */
+        left: 0;
+        background-color: #7CA5A3; /* Color de fondo del menú desplegable */
+        padding: 1rem;
+        border-radius: 0 0 15px 15px;
+        box-shadow: 0px 8px 16px rgba(0,0,0,0.1); /* Sombra para el menú desplegable */
+    }
+
+    .navbar-menu.active {
+        display: flex; /* Muestra el menú cuando está activo */
+    }
+
+    .navbar-item {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 1rem; /* Espaciado entre elementos del menú */
+    }
+
+    .navbar-link {
+        display: block;
+        width: 100%;
+    }
+
+    .navbar-toggle {
+        display: block; /* Muestra el botón de hamburguesa en dispositivos móviles */
+    }
+}
+
+/*Title*/
+.foros-de-discusin {
+    max-width: 90vw; /* Limita el ancho máximo al 90% del ancho de la vista */
+    font-size: 4vw; /* Ajusta el tamaño de fuente relativo al ancho de la vista */
+    font-weight: 800;
+    font-family: 'Nunito', sans-serif;
+    color: #fff;
+    text-align: left;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    height: 10vh; /* Ajusta la altura relativa a la altura de la vista */
+    margin: 57px;
+}
+
+/* Media Query para ajustar el tamaño del título en dispositivos móviles */
+@media (max-width: 768px) {
+    .foros-de-discusin {
+        font-size: 8vw; /* Ajusta el tamaño de la fuente para pantallas más pequeñas */
+        text-align: center; /* Centra el texto en dispositivos móviles */
+        margin: 10px 0; /* Ajusta el margen vertical */
+        margin-left: 20px;
+    }
+}
+
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    width: 90%;
+    max-width: 1200px;
+    padding: 20px;
+    box-sizing: border-box;
+    margin-left: 40px;
+}
+.card {
+    background-color: #E8DAEF;
+    border-radius: 10px;
+    text-align: center;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.card img {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+}
+.card h3 {
+    margin: 10px 0 5px;
+}
+.card p {
+    margin: 5px 0;
+    color: #6C3483;
+}
+.button {
+    margin-top: 15px;
+    padding: 10px 20px;
+    background-color: #AF7AC5;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+.button:hover {
+    background-color: #8E44AD;
+}

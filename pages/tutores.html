@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/tutores.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+    <title>Tutores y Mentores</title>
+</head>
+<body>
+    <div class="rectangle-div">
+        <header>
+            <nav class="navbar">
+                <div class="navbar-brand">
+                    <a href="/index.html">
+                        <img src="/img/logo-mini.png" style="height: 60px;" alt="">
+                    </a>
+                </div>
+                <div class="navbar-toggle" onclick="toggleMenu()">
+                    <span class="hamburger-icon"></span>
+                </div>
+                <ul class="navbar-menu">
+                    <li class="navbar-item"><a href="/pages/cursos.html" class="navbar-link">Cursos</a></li>
+                    <li class="navbar-item"><a href="/pages/comunidad.html" class="navbar-link">Comunidad</a></li>
+                    <li class="navbar-item"><a href="/pages/faqs.html" class="navbar-link">FAQS</a></li>
+                    <li class="navbar-item"><a href="/pages/sesion.html" class="navbar-link">Inicio Sesion</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div class="foros-de-discusin">Mentores</div>
+        <section>
+            <div class="container" style="font-family: 'Nunito', sans-serif;">
+                <div class="card">
+                    <img src="/img/Mask group.png" alt="Emiliano Vargas">
+                    <h3>Emiliano Vargas</h3>
+                    <p>Mentor de Código</p>
+                    <button class="button">Iniciar consulta</button>
+                </div>
+                <div class="card">
+                    <img src="/img/Mask group-1.png" alt="Dante Figueroa">
+                    <h3>Dante Figueroa</h3>
+                    <p>Constructor de Virtualidad</p>
+                    <button class="button">Iniciar consulta</button>
+                </div>
+                <div class="card">
+                    <img src="/img/Mask group-2.png" alt="Thiago Villalobos">
+                    <h3>Thiago Villalobos</h3>
+                    <p>Arquitecto de Aplicaciones</p>
+                    <button class="button">Iniciar consulta</button>
+                </div>
+                <div class="card">
+                    <img src="/img/Mask group-3.png" alt="Valeria Escobar">
+                    <h3>Valeria Escobar</h3>
+                    <p>Guía de Desarrollo</p>
+                    <button class="button">Iniciar consulta</button>
+                </div>
+                <div class="card">
+                    <img src="/img/Mask group-4.png" alt="Catalina Ponce">
+                    <h3>Catalina Ponce</h3>
+                    <p>Diseñador de Universos Digitales</p>
+                    <button class="button">Iniciar consulta</button>
+                </div>
+                <div class="card">
+                    <img src="/img/Mask group-5.png" alt="Renata Arce">
+                    <h3>Renata Arce</h3>
+                    <p>Arquitecta de Algoritmos</p>
+                    <button class="button">Iniciar consulta</button>
+                </div>
+                <div class="card">
+                    <img src="lucas.jpg" alt="Lucas Ramírez">
+                    <h3>Lucas Ramírez</h3>
+                    <p>Gurú de la Programación</p>
+                    <button class="button">Iniciar consulta</button>
+                </div>
+                <div class="card">
+                    <img src="diego.jpg" alt="Diego Martínez">
+                    <h3>Diego Martínez</h3>
+                    <p>Visionario del Software</p>
+                    <button class="button">Iniciar consulta</button>
+                </div>
+                <div class="card">
+                    <h3>+ Tutores</h3>
+                </div>
+            </div>
+        </section>
+    </div>
+    <script>
+        function toggleMenu() {
+            const menu = document.querySelector('.navbar-menu');
+            const navbarToggle = document.querySelector('.navbar-toggle');
+            navbarToggle.classList.toggle('active');
+            menu.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>
