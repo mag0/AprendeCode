@@ -14,6 +14,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Inria+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="/css/foroDiss.css">
     <style>
         .font-main {
             color: #FFF;
@@ -40,33 +41,22 @@
 
 <body>
 
-    <header class="d-flex flex-column flex-md-row justify-content-between align-items-center py-3 px-4 text-white">
-        <div onclick="window.location.href='../index.html'" class="d-flex align-items-center mb-3 mb-md-0"
-            style="cursor: pointer;">
-            <img src="../img/Logo-TP-Visualizacion-White.png" alt="Logo AprendeCode" style="width: 70px; height: auto;">
-            <h1 class="ms-1 mb-0 nav-title">AprendeCode</h1>
-        </div>
-        <nav class="navbar navbar-expand-md">
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon bg-light"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto" style="font-size: 23px;">
-                    <li class="nav-item">
-                        <a class="nav-link active text-white" aria-current="page" href="cursos.html">Cursos</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-white" href="comunidad.html">Comunidad</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-white" href="#">FAQS</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-white" href="sesion.html">Inicio sesión</a>
-                    </li>
-                </ul>
+    <header>
+        <nav style="z-index: 4;background-color: #A4AF93;" class="navbar">
+            <div class="navbar-brand">
+                <a href="/index.html">
+                    <img src="/img/logo-mini.png" style="height: 60px;" alt="">
+                </a>
             </div>
+            <div class="navbar-toggle" onclick="toggleMenu()">
+                <span class="hamburger-icon"></span>
+            </div>
+            <ul style="background-color: #A4AF93;" class="navbar-menu">
+                <li class="navbar-item"><a href="/pages/cursos.html" class="navbar-link">Cursos</a></li>
+                <li class="navbar-item"><a href="/pages/comunidad.html" class="navbar-link">Comunidad</a></li>
+                <li class="navbar-item"><a href="/pages/faqs.html" class="navbar-link">FAQS</a></li>
+                <li class="navbar-item"><a href="/pages/sesion.html" class="navbar-link">Inicio Sesion</a></li>
+            </ul>
         </nav>
     </header>
 
@@ -79,7 +69,7 @@
 
     <main class="font-main">
 
-        <section class="py-4 mx-4 responsive-section" style="padding: 0 6em;">
+        <section style="z-index: 7;" class="py-4 mx-4 responsive-section" style="padding: 0 6em;">
             <p class="text-start text-white messi">Comunidad</p>
             <div class="card d-flex flex-column flex-md-row align-items-center p-4 rounded-4"
                 style="background-color: #B2D2EA;margin-top: 2em;">
@@ -231,7 +221,14 @@
 
 
     </main>
-
+    <script>
+        function toggleMenu() {
+            const menu = document.querySelector('.navbar-menu');
+            const navbarToggle = document.querySelector('.navbar-toggle');
+            navbarToggle.classList.toggle('active');
+            menu.classList.toggle('active');
+        }
+    </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
         </script>
