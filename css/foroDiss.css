@@ -9,6 +9,25 @@
     overflow-y: auto; /* Agrega scroll vertical cuando el contenido excede el tamaño del panel */
 }
 
+/* Estilo del scroll */
+.left-panel::-webkit-scrollbar,
+.right-panel::-webkit-scrollbar {
+    border-radius: 10px;
+    width: 8px; /* Ancho del scrollbar */
+    background-color: #f5f5f5; /* Color de fondo del scrollbar */
+}
+
+.left-panel::-webkit-scrollbar-thumb,
+.right-panel::-webkit-scrollbar-thumb {
+    background-color: #888; /* Color del thumb (barra del scrollbar) */
+    border-radius: 10px; /* Borde redondeado del thumb */
+}
+
+.left-panel::-webkit-scrollbar-thumb:hover,
+.right-panel::-webkit-scrollbar-thumb:hover {
+    background-color: #555; /* Color del thumb al pasar el mouse */
+}
+
 /* Ajuste para dispositivos móviles */
 @media (max-width: 768px) {
     .left-panel, .right-panel {
