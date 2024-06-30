@@ -1,0 +1,258 @@
+/* CSS para ambos paneles con scroll individual */
+.left-panel, .right-panel {
+    background-color: #6c7186;
+    border-radius: 15px;
+    padding: 20px;
+    margin: 10px;
+    width: 100%;
+    max-height: calc(100vh - 200px); /* Ajusta la altura máxima según el tamaño de la pantalla */
+    overflow-y: auto; /* Agrega scroll vertical cuando el contenido excede el tamaño del panel */
+}
+
+/* Ajuste para dispositivos móviles */
+@media (max-width: 768px) {
+    .left-panel, .right-panel {
+        height: auto; /* Altura automática para que el scroll funcione según el contenido */
+        max-height: none; /* Restablece la altura máxima en dispositivos móviles */
+        width: 100%; /* Asegura que ocupen todo el ancho disponible */
+    }
+
+    .container {
+        flex-direction: column-reverse; /* Invierte el orden de los elementos en dispositivos móviles */
+        align-items: center; /* Centra los elementos en la columna invertida */
+    }
+}
+
+/* Ajuste para pantallas grandes */
+@media (min-width: 1200px) {
+    .right-panel {
+        flex-basis: 30%; /* Ancho inicial del panel derecho */
+        margin-right: 0; /* Elimina el margen derecho para alinear con el panel izquierdo */
+    }
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body { 
+    padding: 0;
+    margin: 0;
+}
+
+.rectangle-div {
+    width: 100%;
+    height: 100%;
+    border-radius: 57px 48px 20px 20px;
+    background: linear-gradient(180deg, #2c2744, #9edfda);
+}
+
+/* Estilo del navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #7CA5A3;
+    padding: 1rem;
+    color: #fff;
+}
+
+.navbar-brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.navbar-toggle {
+    display: none; /* Oculta el botón de hamburguesa por defecto */
+    cursor: pointer;
+}
+
+.hamburger-icon {
+    display: block;
+    width: 30px;
+    height: 3px;
+    background-color: #fff;
+    margin: 6px 0;
+    border-radius: 5px;
+    transition: transform 0.3s ease; /* Transición para efecto visual */
+}
+
+.navbar-toggle.active .hamburger-icon {
+    transform: rotate(45deg); /* Rotación del icono al hacer clic */
+}
+
+.navbar-toggle.active .hamburger-icon:before,
+.navbar-toggle.active .hamburger-icon:after {
+    top: 0;
+    transform: rotate(90deg); /* Ajustes para transformación completa */
+}
+
+.navbar-toggle.active .hamburger-icon:after {
+    transform: rotate(-90deg); /* Segunda transformación para la cruz */
+}
+
+.navbar-menu {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+}
+
+.navbar-item {
+   
+}
+
+.navbar-link {
+    font-family: "Nunito Sans", sans-serif;
+    color: #fff;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.navbar-link:hover {
+    background-color: #575757;
+    border-radius: 5px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .navbar-menu {
+        flex-direction: column;
+        width: 100%;
+        display: none; /* Oculta el menú en dispositivos móviles por defecto */
+        position: absolute;
+        top: 5rem; /* Ajusta la posición del menú desplegable */
+        left: 0;
+        background-color: #7CA5A3; /* Color de fondo del menú desplegable */
+        padding: 1rem;
+        border-radius: 0 0 15px 15px;
+        box-shadow: 0px 8px 16px rgba(0,0,0,0.1); /* Sombra para el menú desplegable */
+    }
+
+    .navbar-menu.active {
+        display: flex; /* Muestra el menú cuando está activo */
+    }
+
+    .navbar-item {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 1rem; /* Espaciado entre elementos del menú */
+    }
+
+    .navbar-link {
+        display: block;
+        width: 100%;
+    }
+
+    .navbar-toggle {
+        display: block; /* Muestra el botón de hamburguesa en dispositivos móviles */
+    }
+}
+
+
+/*Title*/
+.foros-de-discusin {
+    max-width: 90vw; /* Limita el ancho máximo al 90% del ancho de la vista */
+    font-size: 4vw; /* Ajusta el tamaño de fuente relativo al ancho de la vista */
+    font-weight: 800;
+    font-family: 'Nunito', sans-serif;
+    color: #fff;
+    text-align: left;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    height: 10vh; /* Ajusta la altura relativa a la altura de la vista */
+    margin: 40px;
+}
+
+/* Media Query para ajustar el tamaño del título en dispositivos móviles */
+@media (max-width: 768px) {
+    .foros-de-discusin {
+        font-size: 8vw; /* Ajusta el tamaño de la fuente para pantallas más pequeñas */
+        text-align: center; /* Centra el texto en dispositivos móviles */
+        margin: 10px 0; /* Ajusta el margen vertical */
+        margin-left: 20px;
+    }
+}
+
+/*Section 1*/
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.forum-post, .recent-post {
+    background-color: #D2DAFF;
+    border-radius: 15px;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.user-info {
+    margin: 3px 0;
+    font-weight: 500;
+    font-style: italic;
+}
+
+.forum-title {
+    font-weight: bolder;
+    font-size: xx-large;
+}
+
+.forum-title-recent {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.post-stats {
+    font-weight: 300;
+    font-style: italic;
+}
+
+.forum-image {
+    background-color: #658EAB;
+    border-radius: 10px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden; /* Oculta cualquier parte de la imagen que se desborde */
+}
+
+.forum-image img {
+    width: 100%; /* Asegura que la imagen ocupe todo el ancho del div */
+    height: auto; /* Permite que la altura se ajuste automáticamente para mantener la proporción */
+    object-fit: cover; /* Ajusta la imagen para que cubra todo el espacio disponible */
+    border-radius: 10px; /* Redondea las esquinas de la imagen para que coincidan con el div */
+}
+
+.recent-posts-title {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+    font-weight: 800;
+    color: #fff;
+}
+
+@media (min-width: 768px) {
+    .container {
+        flex-direction: row;
+        justify-content: center;
+        align-items: flex-start;
+        padding: 20px 40px;
+    }
+
+    .left-panel {
+        margin-right: 20px;
+        flex-grow: 2;
+    }
+
+    .right-panel {
+        height: auto; /* Altura automática para que el scroll funcione según el contenido */
+    }
+}
+
+/*footer*/

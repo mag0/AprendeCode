@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/foroDiss.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+    <title>Foro de discusión</title>
+</head>
+<body style="background: linear-gradient(180deg, #2c2744, #9edfda);">
+    <div class="rectangle-div">
+        <header>
+            <nav class="navbar">
+                <div class="navbar-brand">
+                    <a href="/index.html">
+                        <img src="/img/logo-mini.png" style="height: 60px;" alt="">
+                    </a>
+                </div>
+                <div class="navbar-toggle" onclick="toggleMenu()">
+                    <span class="hamburger-icon"></span>
+                </div>
+                <ul class="navbar-menu">
+                    <li class="navbar-item"><a href="/pages/cursos.html" class="navbar-link">Cursos</a></li>
+                    <li class="navbar-item"><a href="/pages/comunidad.html" class="navbar-link">Comunidad</a></li>
+                    <li class="navbar-item"><a href="/pages/faqs.html" class="navbar-link">FAQS</a></li>
+                    <li class="navbar-item"><a href="/pages/sesion.html" class="navbar-link">Inicio Sesion</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div class="foros-de-discusin">Foros de Discusión</div>
+        <section style="font-family: 'Nunito', sans-serif;">
+            <div class="container">
+                <div class="left-panel">
+                    <div class="forum-post">
+                        <div class="user-info">Mr.Code</div>
+                        <div class="forum-title">Java es buena para comenzar?</div>
+                        <div class="forum-image">
+                            <img src="https://wallpaperaccess.com/full/2820622.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="forum-post">
+                        <div class="user-info">David_Torres</div>
+                        <div class="forum-title">Necesito ayuda! Phyton error</div>
+                        <div class="forum-image">
+                            <img src="https://computerscienced.co.uk/site/wp-content/uploads/2022/01/Find-the-code-errorvending-machine-24-1-22.png" alt="">
+                        </div>
+                    </div>
+                    <div class="forum-post">
+                        <div class="user-info">David_Torres</div>
+                        <div class="forum-title">Necesito ayuda! Phyton error</div>
+                        <div class="forum-image">
+                            <img src="https://computerscienced.co.uk/site/wp-content/uploads/2022/01/Find-the-code-errorvending-machine-24-1-22.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="right-panel">
+                    <div class="recent-posts-title">Publicaciones recientes</div>
+                    <div class="recent-post">
+                        <div class="user-info">OpinadorAnonimo</div>
+                        <div class="forum-title-recent">Lo nuevo de java</div>
+                        <div class="post-stats">25 upvotes · 25 comentarios</div>
+                    </div>
+                    <div class="recent-post">
+                        <div class="user-info">DebatidorConstante</div>
+                        <div class="forum-title-recent">Salida laboral con Phyton?</div>
+                        <div class="post-stats">25 upvotes · 25 comentarios</div>
+                    </div>
+                    <div class="recent-post">
+                        <div class="user-info">SinfoníaDeIdeas</div>
+                        <div class="forum-title-recent">¿Vale la pena estudiar programación para 2024-Futuro?</div>
+                        <div class="post-stats">25 upvotes · 25 comentarios</div>
+                    </div>
+                    <div class="recent-post">
+                        <div class="user-info">NexoAbstracto</div>
+                        <div class="forum-title-recent">programacion y facultad</div>
+                        <div class="post-stats">25 upvotes · 25 comentarios</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer>
+            
+        </footer>
+    </div>
+
+    <script>
+        function toggleMenu() {
+            const menu = document.querySelector('.navbar-menu');
+            const navbarToggle = document.querySelector('.navbar-toggle');
+            navbarToggle.classList.toggle('active');
+            menu.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>
