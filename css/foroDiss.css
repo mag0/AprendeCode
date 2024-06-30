@@ -5,8 +5,7 @@
     padding: 20px;
     margin: 10px;
     width: 100%;
-    max-height: calc(100vh - 200px); /* Ajusta la altura máxima según el tamaño de la pantalla */
-    overflow-y: auto; /* Agrega scroll vertical cuando el contenido excede el tamaño del panel */
+    /* Agrega scroll vertical cuando el contenido excede el tamaño del panel */
 }
 
 /* Estilo del scroll */
