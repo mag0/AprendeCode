@@ -67,7 +67,7 @@ html, body {
 }
 
 .navbar-item {
-   
+
 }
 
 .navbar-link {
@@ -143,17 +143,15 @@ html, body {
     }
 }
 
-
 .container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 20px;
-    width: 90%;
-    max-width: 1200px;
+    width: 100%; /* Asegura que el contenedor ocupe todo el ancho */
     padding: 20px;
     box-sizing: border-box;
-    margin-left: 40px;
 }
+
 .card {
     background-color: #E8DAEF;
     border-radius: 10px;
@@ -161,18 +159,22 @@ html, body {
     padding: 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
+
 .card img {
     border-radius: 50%;
     width: 100px;
     height: 100px;
 }
+
 .card h3 {
     margin: 10px 0 5px;
 }
+
 .card p {
     margin: 5px 0;
     color: #6C3483;
 }
+
 .button {
     margin-top: 15px;
     padding: 10px 20px;
@@ -183,6 +185,37 @@ html, body {
     cursor: pointer;
     text-transform: uppercase;
 }
+
 .button:hover {
     background-color: #8E44AD;
+}
+
+/* Ajuste para pantallas grandes */
+@media (min-width: 1800px) {
+    .container {
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Ajusta el min-width según tus necesidades */
+        gap: 30px; /* Aumenta el espacio entre tarjetas */
+    }
+
+    .card {
+        padding: 30px; /* Aumenta el padding de las tarjetas */
+    }
+
+    .card img {
+        width: 150px; /* Aumenta el tamaño de la imagen */
+        height: 150px; /* Aumenta el tamaño de la imagen */
+    }
+
+    .card h3 {
+        font-size: 1.5em; /* Aumenta el tamaño del texto del título */
+    }
+
+    .card p {
+        font-size: 1.2em; /* Aumenta el tamaño del texto del párrafo */
+    }
+
+    .button {
+        padding: 15px 30px; /* Aumenta el tamaño del botón */
+        font-size: 1.1em; /* Aumenta el tamaño del texto del botón */
+    }
 }
