@@ -138,10 +138,11 @@ html, body {
 /* Media Query para ajustar el tamaño del título en dispositivos móviles */
 @media (max-width: 768px) {
     .foros-de-discusin {
-        font-size: 8vw; /* Ajusta el tamaño de la fuente para pantallas más pequeñas */
+        font-size: 13vw; /* Ajusta el tamaño de la fuente para pantallas más pequeñas */
         text-align: center; /* Centra el texto en dispositivos móviles */
-        margin: 10px 0; /* Ajusta el margen vertical */
-        margin-left: 20px;
+        margin: 3px 0; /* Ajusta el margen vertical */
+        margin-left: -4px;
+        margin-top: 40px;
     }
 
 }
@@ -231,7 +232,7 @@ html, body {
     .item-1 {
         flex-direction: column; /* Asegura que los elementos se apilen en columnas */
         align-items: center; /* Centra los elementos verticalmente */
-        width: 90%;
+        width: 83%;
     }
 
     .item-1 .box-2 {
@@ -248,5 +249,9 @@ html, body {
         font-size: 20px; /* Reducido el tamaño de fuente para pantallas pequeñas */
         width: 100%; /* Ancho completo para ocupar todo el espacio disponible */
         max-width: 300px; /* Ancho máximo para evitar que se expanda demasiado */
+    }
+    .box img {
+        width: 250px;
+        margin-left: 20px;
     }
 }
