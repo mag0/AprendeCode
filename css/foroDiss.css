@@ -75,6 +75,7 @@ html, body {
     background-color: #7CA5A3;
     padding: 1rem;
     color: #fff;
+    border-radius: 0px 0px 20px 20px;
 }
 
 .navbar-brand {
@@ -119,10 +120,8 @@ html, body {
 }
 
 .navbar-item {
-   
+
 }
-
-
 
 .navbar-link {
     font-family: "Nunito Sans", sans-serif;
@@ -171,6 +170,40 @@ html, body {
         display: block; /* Muestra el botón de hamburguesa en dispositivos móviles */
     }
 }
+/* Responsive */
+@media (max-width: 768px) {
+    .navbar-menu {
+        flex-direction: column;
+        width: 100%;
+        display: none; /* Oculta el menú en dispositivos móviles por defecto */
+        position: absolute;
+        top: 5rem; /* Ajusta la posición del menú desplegable */
+        left: 0;
+        background-color: #7CA5A3; /* Color de fondo del menú desplegable */
+        padding: 1rem;
+        border-radius: 0 0 15px 15px;
+        box-shadow: 0px 8px 16px rgba(0,0,0,0.1); /* Sombra para el menú desplegable */
+    }
+
+    .navbar-menu.active {
+        display: flex; /* Muestra el menú cuando está activo */
+    }
+
+    .navbar-item {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 1rem; /* Espaciado entre elementos del menú */
+    }
+
+    .navbar-link {
+        display: block;
+        width: 100%;
+    }
+
+    .navbar-toggle {
+        display: block; /* Muestra el botón de hamburguesa en dispositivos móviles */
+    }
+}
 
 
 /*Title*/
@@ -182,7 +215,7 @@ html, body {
     color: #fff;
     text-align: left;
     display: flex;
-    justify-content: left;
+    justify-content: center;
     align-items: center;
     height: 10vh; /* Ajusta la altura relativa a la altura de la vista */
     margin: 40px;
