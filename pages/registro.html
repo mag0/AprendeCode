@@ -13,7 +13,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Inria+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="/css/foroDiss.css">
+    <link rel="stylesheet" href="../css/foroDiss.css">
     <style>
         .font-main {
             color: #FFF;
@@ -46,18 +46,18 @@
     <header>
         <nav style="background-color: #A4AF93" class="navbar">
             <div class="navbar-brand">
-                <a href="/index.html">
-                    <img src="/img/logo-mini.png" style="height: 60px;" alt="">
+                <a href="../index.html">
+                    <img src="../img/logo-mini.png" style="height: 60px;" alt="">
                 </a>
             </div>
             <div class="navbar-toggle" onclick="toggleMenu()">
                 <span class="hamburger-icon"></span>
             </div>
             <ul style="background-color: #A4AF93;" class="navbar-menu">
-                <li class="navbar-item"><a href="/pages/cursos.html" class="navbar-link">Cursos</a></li>
-                <li class="navbar-item"><a href="/pages/comunidad.html" class="navbar-link">Comunidad</a></li>
-                <li class="navbar-item"><a href="/pages/faqs.html" class="navbar-link">FAQS</a></li>
-                <li class="navbar-item"><a href="/pages/sesion.html" class="navbar-link">Inicio Sesion</a></li>
+                <li class="navbar-item"><a href="cursos.html" class="navbar-link">Cursos</a></li>
+                <li class="navbar-item"><a href="comunidad.html" class="navbar-link">Comunidad</a></li>
+                <li class="navbar-item"><a href="../index.html#faqs" class="navbar-link">FAQS</a></li>
+                <li class="navbar-item"><a href="sesion.html" class="navbar-link">Inicio Sesion</a></li>
             </ul>
         </nav>
     </header>
@@ -117,11 +117,18 @@
             <div style="background-color: #aabc8f;"
                 class="superior d-flex flex-column flex-md-row justify-content-between align-items-center p-3 text-white">
                 <div
-                    class="politica d-flex flex-wrap justify-content-center justify-content-md-start align-items-center text-center text-md-start mb-3 mb-md-0">
+                    class="ppp politica d-flex flex-wrap justify-content-center justify-content-md-start align-items-center text-center text-md-start mb-3 mb-md-0">
                     <h4 class="mb-0 me-md-3 fs-5">Política Privacidad</h4>
                     <h5 class="mb-0 me-md-3 fs-6">Política Cookies</h5>
                     <h6 class="mb-0 me-md-3 fs-6">Aviso legal</h6>
                 </div>
+                <style>
+                    @media (max-width: 768px) {
+                        .ppp h5 {
+                            padding: 0 1em;
+                        }
+                    }
+                </style>
                 <div class="iconos d-flex justify-content-center justify-content-md-end align-items-center">
                     <img class="mx-2" src="../img/facebook.png" alt="Facebook" style="width: 40px; height: 40px;">
                     <img class="mx-2" src="../img/instagram.png" alt="Instagram" style="width: 40px; height: 40px;">
