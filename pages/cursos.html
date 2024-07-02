@@ -21,166 +21,167 @@
         href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
         rel="stylesheet">
 
-        <style>
+    <style>
+        .font-main {
+            color: #FFF;
+            font-family: "Nunito", sans-serif;
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+        }
+
+        body {
+            background-image: linear-gradient(#422D47 0%, #518262 50%);
+        }
+
+        main {
+            background-image: none;
+        }
+
+        .navbar-nav .nav-item:hover .nav-link {
+            color: black !important;
+        }
+
+        .foros-de-discusin {
+            max-width: 100vw;
+            font-size: 4vw;
+            font-weight: 800;
+            font-family: 'Nunito', sans-serif;
+            color: #fff;
+            text-align: left;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 10vh;
+            margin: 50px;
+        }
+
+        .nota-usuarios {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.2em;
+            color: #333;
+            margin-top: 10px;
+        }
+
+        .nota-usuarios h4 {
+            margin-right: 10px;
+        }
+
+        .nota-usuarios .fas {
+            color: #ff6f00;
+            font-size: 1.2em;
+            margin-right: 5px;
+        }
+
+        .boton {
+            font-size: 30px;
+            font-weight: 700;
+        }
+
+        /* Estilos modificados para tarjetas */
+        .card {
+            width: 90%;
+            margin: auto;
+        }
+
+        .card-body {
+            padding: 2rem;
+        }
+
+        .card-text {
+            font-size: 1.2rem;
+        }
+
+        .btn {
+            font-size: 1.5rem;
+            padding: 0.5rem 1.5rem;
+        }
+
+        /* Estilos para estrellas */
+        .fas.fa-star {
+            color: #f59f5d;
+            font-size: 1.2em;
+        }
+
+        /* Media query para pantallas más pequeñas (como móviles) */
+        @media (max-width: 768px) {
             .font-main {
-                color: #FFF;
-                font-family: "Nunito", sans-serif;
-                font-size: 24px;
-                font-style: normal;
-                font-weight: 700;
-                line-height: normal;
+                font-size: 18px;
             }
-        
-            body {
-                background-image: linear-gradient(#422D47 0%, #518262 50%);
-            }
-        
-            main {
-                background-image: none;
-            }
-        
-            .navbar-nav .nav-item:hover .nav-link {
-                color: black !important;
-            }
-        
-            .foros-de-discusin {
-                max-width: 100vw;
-                font-size: 4vw;
-                font-weight: 800;
-                font-family: 'Nunito', sans-serif;
-                color: #fff;
-                text-align: left;
-                display: flex;
-                justify-content: center;
+
+            .navbar-menu {
+                display: none;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                width: 100%;
+                background-color: #A4AF93;
+                flex-direction: column;
                 align-items: center;
-                height: 10vh;
-                margin: 50px;
+                padding: 1rem 0;
+                z-index: 10;
+                transition: transform 0.3s ease-in-out;
+                transform: translateY(-100%);
             }
-        
-            .nota-usuarios {
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                font-size: 1.2em;
-                color: #333;
-                margin-top: 10px;
+
+            .navbar-menu.active {
+                transform: translateY(0);
             }
-        
+
+            .navbar-toggle {
+                display: block;
+            }
+
             .nota-usuarios h4 {
-                margin-right: 10px;
+                display: none;
             }
-        
+
             .nota-usuarios .fas {
-                color: #ff6f00;
-                font-size: 1.2em;
+                font-size: 1em;
                 margin-right: 5px;
             }
-        
-            .boton {
-                font-size: 30px;
-                font-weight: 700;
+
+            /* Ajustar el tamaño del título "Cursos" */
+            .foros-de-discusin {
+                font-size: 14vw;
+                /* Aumenta el tamaño de fuente en móviles */
             }
-        
-            /* Estilos modificados para tarjetas */
-            .card {
-                width: 90%;
-                margin: auto;
+        }
+
+        /* Media query para tabletas y pantallas más grandes */
+        @media (min-width: 768px) {
+            .font-main {
+                font-size: 24px;
             }
-        
-            .card-body {
-                padding: 2rem;
+
+            .navbar-menu {
+                display: flex;
+                position: relative;
+                top: auto;
+                left: auto;
+                width: auto;
+                background-color: #A4AF93;
+                flex-direction: row;
+                align-items: center;
+                padding: 0;
+                z-index: 10;
+                transform: translateY(0);
             }
-        
-            .card-text {
-                font-size: 1.2rem;
+
+            .navbar-toggle {
+                display: none;
             }
-        
-            .btn {
-                font-size: 1.5rem;
-                padding: 0.5rem 1.5rem;
-            }
-        
-            /* Estilos para estrellas */
+
             .fas.fa-star {
-                color: #f59f5d;
-                font-size: 1.2em;
+                font-size: 1em;
             }
-        
-            /* Media query para pantallas más pequeñas (como móviles) */
-            @media (max-width: 768px) {
-                .font-main {
-                    font-size: 18px;
-                }
-        
-                .navbar-menu {
-                    display: none;
-                    position: absolute;
-                    top: 100%;
-                    left: 0;
-                    width: 100%;
-                    background-color: #A4AF93;
-                    flex-direction: column;
-                    align-items: center;
-                    padding: 1rem 0;
-                    z-index: 10;
-                    transition: transform 0.3s ease-in-out;
-                    transform: translateY(-100%);
-                }
-        
-                .navbar-menu.active {
-                    transform: translateY(0);
-                }
-        
-                .navbar-toggle {
-                    display: block;
-                }
-        
-                .nota-usuarios h4 {
-                    display: none;
-                }
-        
-                .nota-usuarios .fas {
-                    font-size: 1em;
-                    margin-right: 5px;
-                }
-        
-                /* Ajustar el tamaño del título "Cursos" */
-                .foros-de-discusin {
-                    font-size: 14vw; /* Aumenta el tamaño de fuente en móviles */
-                }
-            }
-        
-            /* Media query para tabletas y pantallas más grandes */
-            @media (min-width: 768px) {
-                .font-main {
-                    font-size: 24px;
-                }
-        
-                .navbar-menu {
-                    display: flex;
-                    position: relative;
-                    top: auto;
-                    left: auto;
-                    width: auto;
-                    background-color: #A4AF93;
-                    flex-direction: row;
-                    align-items: center;
-                    padding: 0;
-                    z-index: 10;
-                    transform: translateY(0);
-                }
-        
-                .navbar-toggle {
-                    display: none;
-                }
-        
-                .fas.fa-star {
-                    font-size: 1em;
-                }
-            }
-        </style>
-        
-        
+        }
+    </style>
+
+
 
 </head>
 
@@ -199,7 +200,7 @@
             <ul style="background-color: #A4AF93;" class="navbar-menu">
                 <li class="navbar-item"><a href="cursos.html" class="navbar-link">Cursos</a></li>
                 <li class="navbar-item"><a href="comunidad.html" class="navbar-link">Comunidad</a></li>
-                <li class="navbar-item"><a href="/#faq" class="navbar-link">FAQS</a></li>
+                <li class="navbar-item"><a href="../index.html#faq" class="navbar-link">FAQS</a></li>
                 <li class="navbar-item"><a href="sesion.html" class="navbar-link">Inicio Sesion</a></li>
             </ul>
         </nav>
@@ -239,55 +240,60 @@
                 </div>
             </div>
             <div class="card d-flex flex-column flex-md-row align-items-center p-4 rounded-4"
-            style="background-color: #FFF3B5;margin-bottom: 2em;">
-            <div class="d-flex flex-column align-items-center m-md-5 m-3 gap-3">
-                <img src="../img/Mask group-1.png" class="card-img-top rounded-circle"
-                    style="width: 8em; height: 8em;" alt="Emiliano Vargas">
-                <h3>Dante Figueroa</h3>
-                <h5>Constructor de Virtualidad</h5>
-            </div>
-            <div class="card-body text-start p-4 rounded-4 w-100" style="background-color: #DED39B;">
-                <p class="card-title fs-4">Introducción a la Inteligencia Artificial</p>
-                <h5 class="card-text my-4">Descubre el fascinante mundo de la inteligencia artificial. En este curso, explorarás los fundamentos del aprendizaje automático, las redes neuronales y cómo implementar modelos de IA en proyectos reales. Ideal para quienes desean iniciarse en esta revolucionaria tecnología.</h5>
-                <div class="d-flex justify-content-center align-items-center nota-usuarios">
-                    <h4>Nota de nuestros usuarios:</h4>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
+                style="background-color: #FFF3B5;margin-bottom: 2em;">
+                <div class="d-flex flex-column align-items-center m-md-5 m-3 gap-3">
+                    <img src="../img/Mask group-1.png" class="card-img-top rounded-circle"
+                        style="width: 8em; height: 8em;" alt="Emiliano Vargas">
+                    <h3>Dante Figueroa</h3>
+                    <h5>Constructor de Virtualidad</h5>
                 </div>
+                <div class="card-body text-start p-4 rounded-4 w-100" style="background-color: #DED39B;">
+                    <p class="card-title fs-4">Introducción a la Inteligencia Artificial</p>
+                    <h5 class="card-text my-4">Descubre el fascinante mundo de la inteligencia artificial. En este
+                        curso, explorarás los fundamentos del aprendizaje automático, las redes neuronales y cómo
+                        implementar modelos de IA en proyectos reales. Ideal para quienes desean iniciarse en esta
+                        revolucionaria tecnología.</h5>
+                    <div class="d-flex justify-content-center align-items-center nota-usuarios">
+                        <h4>Nota de nuestros usuarios:</h4>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
 
-                <div class="d-flex justify-content-end">
-                    <a href="cursoProgramacion.html" class="btn boton">Comenzar curso</a>
+                    <div class="d-flex justify-content-end">
+                        <a href="cursoProgramacion.html" class="btn boton">Comenzar curso</a>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="card d-flex flex-column flex-md-row align-items-center p-4 rounded-4"
-        style="background-color: #FFF3B5;margin-bottom: 2em;">
-        <div class="d-flex flex-column align-items-center m-md-5 m-3 gap-3">
-            <img src="../img/Mask group-2.png" class="card-img-top rounded-circle"
-                style="width: 8em; height: 8em;" alt="Emiliano Vargas">
-            <h3>Thiago Villalobos</h3>
-            <h5>Arquitecto de Aplicaciones  </h5>
-        </div>
-        <div class="card-body text-start p-4 rounded-4 w-100" style="background-color: #DED39B;">
-            <p class="card-title fs-4">Desarrollo de Aplicaciones Móviles</p>
-            <h5 class="card-text my-4">Domina las técnicas y herramientas esenciales para crear aplicaciones móviles para Android e iOS. Este curso te guiará a través del diseño, desarrollo y despliegue de aplicaciones móviles, utilizando lenguajes y plataformas como Java, Swift, y Flutter.</h5>
-            <div class="d-flex justify-content-center align-items-center nota-usuarios">
-                <h4>Nota de nuestros usuarios:</h4>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-            </div>
+            <div class="card d-flex flex-column flex-md-row align-items-center p-4 rounded-4"
+                style="background-color: #FFF3B5;margin-bottom: 2em;">
+                <div class="d-flex flex-column align-items-center m-md-5 m-3 gap-3">
+                    <img src="../img/Mask group-2.png" class="card-img-top rounded-circle"
+                        style="width: 8em; height: 8em;" alt="Emiliano Vargas">
+                    <h3>Thiago Villalobos</h3>
+                    <h5>Arquitecto de Aplicaciones </h5>
+                </div>
+                <div class="card-body text-start p-4 rounded-4 w-100" style="background-color: #DED39B;">
+                    <p class="card-title fs-4">Desarrollo de Aplicaciones Móviles</p>
+                    <h5 class="card-text my-4">Domina las técnicas y herramientas esenciales para crear aplicaciones
+                        móviles para Android e iOS. Este curso te guiará a través del diseño, desarrollo y despliegue de
+                        aplicaciones móviles, utilizando lenguajes y plataformas como Java, Swift, y Flutter.</h5>
+                    <div class="d-flex justify-content-center align-items-center nota-usuarios">
+                        <h4>Nota de nuestros usuarios:</h4>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
 
-            <div class="d-flex justify-content-end">
-                <a href="cursoProgramacion.html" class="btn boton">Comenzar curso</a>
+                    <div class="d-flex justify-content-end">
+                        <a href="cursoProgramacion.html" class="btn boton">Comenzar curso</a>
+                    </div>
+                </div>
             </div>
-        </div>
-    </div>
         </section>
 
     </main>
@@ -312,8 +318,7 @@
                 <div class="iconos d-flex justify-content-center justify-content-md-end align-items-center">
                     <img class="mx-2" src="../img/facebook.png" alt="Facebook" style="width: 40px; height: 40px;">
                     <img class="mx-2" src="../img/instagram.png" alt="Instagram" style="width: 40px; height: 40px;">
-                    <img class="mx-2" src="../img/linkedin-logo.png" alt="LinkedIn"
-                        style="width: 40px; height: 40px;">
+                    <img class="mx-2" src="../img/linkedin-logo.png" alt="LinkedIn" style="width: 40px; height: 40px;">
                 </div>
             </div>
             <div style="background-color: #A4AF93;"

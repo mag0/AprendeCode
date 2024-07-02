@@ -11,7 +11,8 @@
     <script src="https://kit.fontawesome.com/ac3c7794f3.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inria+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap"
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inria+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap"
         rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
         rel="stylesheet">
@@ -59,7 +60,8 @@
             }
 
             .faq-image {
-                margin-bottom: 20px; /* Espacio entre imagen y contenido */
+                margin-bottom: 20px;
+                /* Espacio entre imagen y contenido */
             }
         }
 
@@ -159,7 +161,8 @@
             display: none;
             padding: 10px 0;
         }
-        .btn-primary{
+
+        .btn-primary {
             background-color: #b2c793;
             font-family: "Nunito", sans-serif;
             font-weight: 900;
@@ -167,15 +170,17 @@
             border: none;
             color: #000;
         }
-        .btn-primary-1{
+
+        .btn-primary-1 {
             background-color: #A4AF93;
             font-family: "Nunito", sans-serif;
             font-weight: 900;
             font-size: 25px;
             border: none;
-           color: #fff;
+            color: #fff;
         }
-        .btn-secondary{
+
+        .btn-secondary {
             background-color: #7b8173;
             font-family: "Nunito", sans-serif;
             font-weight: 900;
@@ -190,18 +195,18 @@
         <header>
             <nav class="navbar" style="background-color: #A4AF93;">
                 <div class="navbar-brand">
-                    <a href="/index.html">
-                        <img src="/img/logo-mini.png" style="height: 60px;" alt="">
+                    <a href="./index.html">
+                        <img src="./img/logo-mini.png" style="height: 60px;" alt="">
                     </a>
                 </div>
                 <div class="navbar-toggle" onclick="toggleMenu()">
                     <span class="hamburger-icon"></span>
                 </div>
                 <ul style="background-color: #A4AF93;" class="navbar-menu">
-                    <li class="navbar-item"><a href="/pages/cursos.html" class="navbar-link">Cursos</a></li>
-                    <li class="navbar-item"><a href="/pages/comunidad.html" class="navbar-link">Comunidad</a></li>
-                    <li class="navbar-item"><a href="/#faq" class="navbar-link">FAQS</a></li>
-                    <li class="navbar-item"><a href="/pages/sesion.html" class="navbar-link">Inicio Sesion</a></li>
+                    <li class="navbar-item"><a href="./pages/cursos.html" class="navbar-link">Cursos</a></li>
+                    <li class="navbar-item"><a href="./pages/comunidad.html" class="navbar-link">Comunidad</a></li>
+                    <li class="navbar-item"><a href="#faq" class="navbar-link">FAQS</a></li>
+                    <li class="navbar-item"><a href="./pages/sesion.html" class="navbar-link">Inicio Sesion</a></li>
                 </ul>
             </nav>
         </header>
@@ -217,38 +222,80 @@
                         <div class="col-md-6 mt-4 mt-md-0">
                             <div class="text-white" style="font-size: 1.2em;">
                                 <h1 class="mb-4 title-cta" id="up">
-                                    Impulsa tus proyectos con la fuerza de la comunidad!
+                                    ¡Impulsa tus proyectos con la fuerza de la comunidad!
                                 </h1>
                                 <h5 class="mb-4 subtitles">
                                     Aprende, colabora y crece con nuestros cursos de programación online.
                                 </h5>
                                 <div class="text-center">
-                                    <button class="btn btn-primary-1" data-bs-toggle="modal" data-bs-target="#modalRegistro">Comienza tu viaje!</button>
-
+                                    <button class="btn btn-primary-1" id="openModalBtn">¡Comienza tu viaje!</button>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </section>
-                        <!-- Modal -->
-<div class="modal fade" id="modalRegistro" tabindex="-1" aria-labelledby="modalRegistroLabel" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title" id="modalRegistroLabel">Registro necesario</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+
+            <!-- Modal -->
+            <div id="myModal" class="modal">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="modalRegistroLabel">Registro necesario</h5>
+                            <button onclick="window.location.href = './index.html'" type="button" class="btn-close"
+                                data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div style="color: black;" class="modal-body">
+                            <p>Para comenzar tu viaje, necesitas registrarte primero.</p>
+                        </div>
+                        <div class="modal-footer">
+                            <a style="color: black;font-size: 1em;" href="./pages/registro.html"
+                                class="btn btn-primary-1">Iniciar
+                                Sesion</a>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="modal-body">
-                <p>Para comenzar tu viaje, necesitas registrarte primero.</p>
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-                <a href="/pages/registro.html" class="btn btn-primary">Registrarse</a>
-            </div>
-        </div>
-    </div>
-</div>
+            <style>
+                /* Modal */
+
+                .modal {
+                    display: none;
+                    position: fixed;
+                    z-index: 1;
+                    padding-top: 100px;
+                    left: 0;
+                    top: 0;
+                    width: 100%;
+                    height: 100%;
+                    overflow: auto;
+                    background-color: rgb(0, 0, 0);
+                    background-color: rgba(0, 0, 0, 0.4);
+                }
+
+                .modal-content {
+                    background-color: #fefefe;
+                    margin: auto;
+                    padding: 20px;
+                    border: 1px solid #888;
+                    width: 80%;
+                    max-width: 500px;
+                }
+
+                .close {
+                    color: #aaa;
+                    float: right;
+                    font-size: 28px;
+                    font-weight: bold;
+                }
+
+                .close:hover,
+                .close:focus {
+                    color: black;
+                    text-decoration: none;
+                    cursor: pointer;
+                }
+            </style>
             <section>
                 <h2 class="titles-section">Algunos de nuestros cursos</h2>
                 <div class="container py-5">
@@ -297,7 +344,8 @@
                         <div class="faq-item">
                             <div class="faq-question">¿Qué es AprendeCode?</div>
                             <div class="faq-answer">
-                                AprendeCode es una plataforma de aprendizaje en línea que ofrece cursos de programación y desarrollo web para todos los niveles.
+                                AprendeCode es una plataforma de aprendizaje en línea que ofrece cursos de programación
+                                y desarrollo web para todos los niveles.
                             </div>
                         </div>
                         <div class="faq-item">
@@ -309,13 +357,15 @@
                         <div class="faq-item">
                             <div class="faq-question">¿Ofrecen certificados?</div>
                             <div class="faq-answer">
-                                Sí, al completar un curso recibirás un certificado de finalización que podrás compartir en tu perfil de LinkedIn o en tu CV.
+                                Sí, al completar un curso recibirás un certificado de finalización que podrás compartir
+                                en tu perfil de LinkedIn o en tu CV.
                             </div>
                         </div>
                         <div class="faq-item">
                             <div class="faq-question">¿Hay cursos gratuitos?</div>
                             <div class="faq-answer">
-                                Sí, ofrecemos una selección de cursos gratuitos para que puedas comenzar a aprender sin ningún costo.
+                                Sí, ofrecemos una selección de cursos gratuitos para que puedas comenzar a aprender sin
+                                ningún costo.
                             </div>
                         </div>
                     </div>
@@ -330,7 +380,8 @@
                         <div class="card-body">
                             <h3>Pedro López</h3>
                             <h5 class="subtitles">Desarrollador Full-Stack</h5>
-                            <p>Los cursos de AprendeCode me ayudaron a mejorar mis habilidades y conseguir un mejor trabajo. ¡Recomendado!</p>
+                            <p>Los cursos de AprendeCode me ayudaron a mejorar mis habilidades y conseguir un mejor
+                                trabajo. ¡Recomendado!</p>
                         </div>
                     </div>
                     <div class="card">
@@ -338,7 +389,8 @@
                         <div class="card-body">
                             <h3>María González</h3>
                             <h5 class="subtitles">Diseñadora UX/UI</h5>
-                            <p>AprendeCode ofrece una excelente selección de cursos que se adaptan a todos los niveles. ¡Muy contenta con los resultados!</p>
+                            <p>AprendeCode ofrece una excelente selección de cursos que se adaptan a todos los niveles.
+                                ¡Muy contenta con los resultados!</p>
                         </div>
                     </div>
                     <div class="card">
@@ -346,16 +398,19 @@
                         <div class="card-body">
                             <h3>Juan Pérez</h3>
                             <h5 class="subtitles">Ingeniero de Software</h5>
-                            <p>Gracias a AprendeCode, logré aprender nuevas tecnologías que me ayudaron a crecer profesionalmente. ¡Muy recomendable!</p>
+                            <p>Gracias a AprendeCode, logré aprender nuevas tecnologías que me ayudaron a crecer
+                                profesionalmente. ¡Muy recomendable!</p>
                         </div>
                     </div>
                 </div>
             </section>
             <div class="text-center">
                 <h1 class="text-white" style="font-weight: 800; margin-top: 50px;">El Mejor Momento es Hoy!</h1>
-                <h3 class="text-white" style="font-style: italic; font-weight: 200;">El primer paso hacia tus metas empieza ahora, no lo pospongas.</h3>
-                <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalRegistro">Comienza tu viaje!</button>
-                <a class="btn btn-secondary" style="height: 45px;" href="/#up">Volver arriba</a>
+                <h3 class="text-white" style="font-style: italic; font-weight: 200;">El primer paso hacia tus metas
+                    empieza ahora, no lo pospongas.</h3>
+                <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalRegistro">Comienza tu
+                    viaje!</button>
+                <a class="btn btn-secondary" style="height: 45px;" href="#up">Volver arriba</a>
 
             </div>
             <footer style="font-family: Nunito, sans-serif; margin-top: 100px;">
@@ -376,9 +431,11 @@
                             }
                         </style>
                         <div class="iconos d-flex justify-content-center justify-content-md-end align-items-center">
-                            <img class="mx-2" src="../img/facebook.png" alt="Facebook" style="width: 40px; height: 40px;">
-                            <img class="mx-2" src="../img/instagram.png" alt="Instagram" style="width: 40px; height: 40px;">
-                            <img class="mx-2" src="../img/linkedin-logo.png" alt="LinkedIn"
+                            <img class="mx-2" src="./img/facebook.png" alt="Facebook"
+                                style="width: 40px; height: 40px;">
+                            <img class="mx-2" src="./img/instagram.png" alt="Instagram"
+                                style="width: 40px; height: 40px;">
+                            <img class="mx-2" src="./img/linkedin-logo.png" alt="LinkedIn"
                                 style="width: 40px; height: 40px;">
                         </div>
                     </div>
@@ -387,7 +444,7 @@
                         <div
                             class="politica d-flex justify-content-center justify-content-md-start align-items-center mb-3 mb-md-0">
                             <div class="imagen">
-                                <img src="../img/Logo-TP-Visualizacion-Black.png" alt="Logo AprendeCode"
+                                <img src="./img/Logo-TP-Visualizacion-Black.png" alt="Logo AprendeCode"
                                     style="width: 80px; height: 80px;">
                             </div>
                             <h5 class="nombre ms-1 mb-0 fs-3">AprendeCode</h5>
@@ -419,10 +476,42 @@
             const menu = document.querySelector('.navbar-menu');
             menu.style.display = menu.style.display === 'block' ? 'none' : 'block';
         }
+        // Get the modal
+        var modal = document.getElementById("myModal");
+
+        // Get the button that opens the modal
+        var btn = document.getElementById("openModalBtn");
+
+        // Get the <span> element that closes the modal
+        var span = document.getElementsByClassName("close")[0];
+
+        // Get the button that closes the modal
+        var closeModalBtn = document.getElementById("closeModalBtn");
+
+        // When the user clicks on the button, open the modal
+        btn.onclick = function () {
+            modal.style.display = "block";
+        }
+
+        // When the user clicks on <span> (x), close the modal
+        span.onclick = function () {
+            modal.style.display = "none";
+        }
+
+        // When the user clicks on the close button, close the modal
+        closeModalBtn.onclick = function () {
+            modal.style.display = "none";
+        }
+
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function (event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+
     </script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-Z7zFqnVZZ7E6WyUVHqQkNzax4Y0fWTIvLR2s8oIE9T3YzWmIWtq2zTocELo3lMRi"
-        crossorigin="anonymous"></script>
+
 </body>
 
 </html>
