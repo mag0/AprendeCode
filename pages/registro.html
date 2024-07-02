@@ -4,164 +4,181 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AprendeCode</title>
+    <link rel="stylesheet" href="/css/registro.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <script src="https://kit.fontawesome.com/ac3c7794f3.js" crossorigin="anonymous"></script>
+          integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/sesion.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Inria+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="../css/foroDiss.css">
+    <title>Registro - Foros de Discusión</title>
     <style>
-        .font-main {
-            color: #FFF;
-            font-family: "Inria Sans";
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html, body {
+            padding: 0;
+            margin: 0;
+        }
+
+        .rectangle-div {
+            width: 100%;
+            height: 100vh;
+            background: linear-gradient(180deg, #2C2744 0%, #FEACBB 100%);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 10px; /* Agrega espacio interior al contenedor principal */
+            box-sizing: border-box; /* Incluye los bordes y el relleno en el tamaño total */
+        }
+
+        .mensaje-exitoso {
+            text-align: center;
             font-size: 24px;
-            font-style: normal;
+            font-weight: bold;
+            color: #FEACBB;
+            margin-top: 20px;
+        }
+
+        .login-container {
+            font-family: "Nunito", sans-serif;
             font-weight: 700;
-            line-height: normal;
+            color: #fff;
+            max-width: 400px;
+            margin: auto;
+            padding: 30px;
+            background: linear-gradient(180deg, rgba(66, 45, 71, 0.60) 0%, rgba(79, 65, 90, 0.60) 28.5%, rgba(81, 109, 130, 0.60) 78.5%);
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+            z-index: 2;
+            margin-bottom: 20px; /* Agrega espacio inferior */
         }
 
-        body {
-            background-image: linear-gradient(to left bottom, #BFA35C 20%, #82517D 60%);
+        .login-logo {
+            text-align: center;
+            margin-bottom: 20px;
         }
 
-        label {
-            font-size: 2em;
-            color: white;
-            font-weight: 100;
+        .btn-primary {
+            background-color: #FEACBB;
+            border: none;
+            color: black;
+            font-weight: 800;
+            font-size: 20px;
         }
 
-        .navbar-nav .nav-item:hover .nav-link {
-            color: black !important;
+        .btn-outline-secondary {
+            background-color: #6568fd;
+            color: black;
+            font-weight: 700;
+            font-size: 20px;
         }
+
+        .btn:hover {
+            background-color: #e31b3f;
+        }
+
+        @media (max-width: 576px) {
+            .login-container {
+                padding: 20px;
+            }
+        }
+
+        /* Ajustes para pantallas grandes */
+        @media (min-width: 992px) {
+            .rectangle-div {
+                padding: 100px; /* Aumenta el espacio interior en pantallas grandes */
+            }
+
+            .login-container {
+                max-width: 900px; /* Aumenta el ancho máximo del contenedor en pantallas grandes */
+                padding: 50px; /* Aumenta el relleno del contenedor en pantallas grandes */
+            }
+        }
+
+        /* Estilo para el mensaje de registro exitoso */
+        .mensaje-exitoso {
+            display: none; /* Oculta el mensaje inicialmente */
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
+            color: black;
+        }
+
     </style>
-    <link rel="stylesheet" href="../css/style.css">
 </head>
 
 <body>
+<div class="rectangle-div">
+    <div class="login-container">
+        <div class="login-logo">
+            <img src="/img/logo.png" alt="Logo" style="max-width: 150px;">AprendeCode
+        </div>
+        <form id="registroForm">
+            <div class="mb-3">
+                <label for="inputNombre" class="form-label">Nombre</label>
+                <input type="text" class="form-control" id="inputNombre" placeholder="Nombre" required>
+            </div>
+            <div class="mb-3">
+                <label for="inputEmail" class="form-label">Correo electrónico</label>
+                <input type="email" class="form-control" id="inputEmail" placeholder="nombre@ejemplo.com" required>
+            </div>
+            <div class="mb-3">
+                <label for="inputPassword" class="form-label">Contraseña</label>
+                <input type="password" class="form-control" id="inputPassword" placeholder="Contraseña" required>
+            </div>
+            <div class="mb-3">
+                <label for="inputConfirmPassword" class="form-label">Confirmar Contraseña</label>
+                <input type="password" class="form-control" id="inputConfirmPassword" placeholder="Confirmar Contraseña"
+                       required>
+            </div>
+            <div class="d-grid gap-2">
+                <button type="submit" class="btn btn-primary">Registrarse</button>
+                <a href="sesion.html" class="btn btn-outline-secondary">Iniciar sesión</a>
+            </div>
+        </form>
 
-    <header>
-        <nav style="background-color: #A4AF93" class="navbar">
-            <div class="navbar-brand">
-                <a href="../index.html">
-                    <img src="../img/logo-mini.png" style="height: 60px;" alt="">
-                </a>
-            </div>
-            <div class="navbar-toggle" onclick="toggleMenu()">
-                <span class="hamburger-icon"></span>
-            </div>
-            <ul style="background-color: #A4AF93;" class="navbar-menu">
-                <li class="navbar-item"><a href="cursos.html" class="navbar-link">Cursos</a></li>
-                <li class="navbar-item"><a href="comunidad.html" class="navbar-link">Comunidad</a></li>
-                <li class="navbar-item"><a href="/#faq" class="navbar-link">FAQS</a></li>
-                <li class="navbar-item"><a href="sesion.html" class="navbar-link">Inicio Sesion</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <div class="container" style="margin-top: 6em;">
-        <div class="row justify-content-center">
-            <div class="col-md-8 col-lg-6">
-                <form>
-                    <div class="form-group">
-                        <label for="nombre">Nombre</label>
-                        <input style="font-size: 1.5em;" type="text" class="form-control" id="nombre" name="nombre">
-                    </div>
-                    <div class="form-group">
-                        <label for="apellido">Apellido</label>
-                        <input style="font-size: 1.5em;" type="text" class="form-control" id="apellido" name="apellido">
-                    </div>
-                    <div class="form-group">
-                        <label for="email">Correo Electrónico</label>
-                        <input style="font-size: 1.5em;" type="email" class="form-control" id="email" name="email">
-                    </div>
-                    <div class="form-group">
-                        <label for="contrasena">Contraseña</label>
-                        <input style="font-size: 1.5em;" type="password" class="form-control" id="contrasena"
-                            name="contrasena">
-                    </div>
-                    <div class="form-group form-check d-flex justify-content-center align-items-center">
-                        <input style="font-size: 1.5em;" type="checkbox" class="form-check-input" id="politicas"
-                            name="politicas">
-                        <label class="form-check-label" for="politicas">He leído y acepto las políticas de
-                            privacidad</label>
-                    </div>
-                    <button onclick="window.location.href='/index.html'"
-                        style="margin: .5em;font-weight: 700;color: white;font-size: 1.5em;background-color: #AABC8F;"
-                        type="submit" class="btn btn-block">Registrarse</button>
-                    <div class="text-center">
-                        <a href="sesion.html" style="color: white;">¡Ya tengo una cuenta!</a>
-                    </div>
-                </form>
-            </div>
+        <!-- Mensaje de registro exitoso oculto inicialmente -->
+        <div id="registroExitosoMensaje" class="mensaje-exitoso">
+            ¡Registro exitoso! Bienvenido a AprendeCode.
         </div>
     </div>
+</div>
 
+<!-- Bootstrap JavaScript (CDN) -->
+<script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0YexJezQYimf6S+858rXFCyS+5BPkJSLmF"
+    crossorigin="anonymous"></script>
 
-    <div style="background: black;margin-top: 4em;" class="horizontal-line"></div>
+<!-- JavaScript para mostrar el mensaje de registro exitoso y redireccionar -->
+<script>
+    document.getElementById('registroForm').addEventListener('submit', function (event) {
+        event.preventDefault(); // Evita el envío del formulario por defecto
 
-    <div class="d-flex justify-content-center align-items-center flex-column" style="margin: 4em 0;">
-        <h2>O registrarse con</h2>
-        <div class="d-flex justify-content-around align-items-center">
-            <img style="width: 4em;height: 4em;margin: 0 .5em;border-radius: 50%;" src="../img/facebook.png" alt="">
-            <img style="width: 4em;height: 4em;margin: 0 .5em;border-radius: 50%;" src="../img/facebook.png" alt="">
-            <img style="width: 4em;height: 4em;margin: 0 .5em;border-radius: 50%;" src="../img/facebook.png" alt="">
-        </div>
-    </div>
+        // Oculta el formulario
+        document.getElementById('registroForm').style.display = 'none';
 
-    <footer>
-        <div class="container-fluid px-0">
-            <div style="background-color: #aabc8f;"
-                class="superior d-flex flex-column flex-md-row justify-content-between align-items-center p-3 text-white">
-                <div
-                    class="ppp politica d-flex flex-wrap justify-content-center justify-content-md-start align-items-center text-center text-md-start mb-3 mb-md-0">
-                    <h4 class="mb-0 me-md-3 fs-5">Política Privacidad</h4>
-                    <h5 class="mb-0 me-md-3 fs-6">Política Cookies</h5>
-                    <h6 class="mb-0 me-md-3 fs-6">Aviso legal</h6>
-                </div>
-                <style>
-                    @media (max-width: 768px) {
-                        .ppp h5 {
-                            padding: 0 1em;
-                        }
-                    }
-                </style>
-                <div class="iconos d-flex justify-content-center justify-content-md-end align-items-center">
-                    <img class="mx-2" src="../img/facebook.png" alt="Facebook" style="width: 40px; height: 40px;">
-                    <img class="mx-2" src="../img/instagram.png" alt="Instagram" style="width: 40px; height: 40px;">
-                    <img class="mx-2" src="../img/linkedin-logo.png" alt="LinkedIn" style="width: 40px; height: 40px;">
-                </div>
-            </div>
-            <div style="background-color: #8e9c77;"
-                class="inferior d-flex flex-column flex-md-row justify-content-between align-items-center p-3 text-white">
-                <div
-                    class="politica d-flex justify-content-center justify-content-md-start align-items-center mb-3 mb-md-0">
-                    <div class="imagen">
-                        <img src="../img/Logo-TP-Visualizacion-White.png" alt="Logo AprendeCode"
-                            style="width: 100px; height: 90px;">
-                    </div>
-                    <h5 class="nombre ms-3 mb-0 fs-5">AprendeCode</h5>
-                </div>
-                <div class="iconos d-flex justify-content-center justify-content-md-end align-items-center">
-                    <p class="mb-0 text-center text-md-end fs-6">© Copyright AprendeCode 2024</p>
-                </div>
-            </div>
-        </div>
-    </footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
-        </script>
-    <script>
-        function toggleMenu() {
-            const menu = document.querySelector('.navbar-menu');
-            const navbarToggle = document.querySelector('.navbar-toggle');
-            navbarToggle.classList.toggle('active');
-            menu.classList.toggle('active');
-        }
-    </script>
+        // Muestra el mensaje de registro exitoso
+        var mensajeExito = document.getElementById('registroExitosoMensaje');
+        mensajeExito.style.display = 'block';
+        // Redirecciona al index después de 2 segundos
+        setTimeout(function () {
+            window.location.href = "../index.html";
+        }, 3000); // 3000 milisegundos = 3 segundos
+    });
+</script>
+
 </body>
 
 </html>
