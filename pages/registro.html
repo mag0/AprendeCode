@@ -25,19 +25,22 @@
         body {
             padding: 0;
             margin: 0;
+
         }
 
-        .rectangle-div {
-            width: 100%;
-            height: 100vh;
+        body {
             background: linear-gradient(180deg, #2C2744 0%, #FEACBB 100%);
             display: flex;
             justify-content: center;
             align-items: center;
             padding: 10px;
+<<<<<<< HEAD
             /* Agrega espacio interior al contenedor principal */
             box-sizing: border-box;
             /* Incluye los bordes y el relleno en el tamaño total */
+=======
+            box-sizing: border-box;
+>>>>>>> 6b5392eb88c0ebb3956d6b3a3102738ecf0910d6
         }
 
         .mensaje-exitoso {
@@ -53,6 +56,7 @@
             font-weight: 700;
             color: #fff;
             max-width: 400px;
+            width: 100%;
             margin: auto;
             padding: 30px;
             background: linear-gradient(180deg, rgba(66, 45, 71, 0.60) 0%, rgba(79, 65, 90, 0.60) 28.5%, rgba(81, 109, 130, 0.60) 78.5%);
@@ -60,7 +64,10 @@
             box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
             z-index: 2;
             margin-bottom: 20px;
+<<<<<<< HEAD
             /* Agrega espacio inferior */
+=======
+>>>>>>> 6b5392eb88c0ebb3956d6b3a3102738ecf0910d6
         }
 
         .login-logo {
@@ -93,8 +100,8 @@
             }
         }
 
-        /* Ajustes para pantallas grandes */
         @media (min-width: 992px) {
+<<<<<<< HEAD
             .rectangle-div {
                 padding: 100px;
                 /* Aumenta el espacio interior en pantallas grandes */
@@ -105,13 +112,24 @@
                 /* Aumenta el ancho máximo del contenedor en pantallas grandes */
                 padding: 50px;
                 /* Aumenta el relleno del contenedor en pantallas grandes */
+=======
+            body {
+                padding: 150px;
+            }
+
+            .login-container {
+                max-width: 700px;
+                padding: 50px;
+>>>>>>> 6b5392eb88c0ebb3956d6b3a3102738ecf0910d6
             }
         }
 
-        /* Estilo para el mensaje de registro exitoso */
         .mensaje-exitoso {
             display: none;
+<<<<<<< HEAD
             /* Oculta el mensaje inicialmente */
+=======
+>>>>>>> 6b5392eb88c0ebb3956d6b3a3102738ecf0910d6
             position: absolute;
             top: 50%;
             left: 50%;
@@ -126,6 +144,7 @@
 </head>
 
 <body>
+<<<<<<< HEAD
     <div class="rectangle-div">
         <div class="login-container">
             <div class="login-logo">
@@ -160,8 +179,41 @@
                 ¡Registro exitoso! Bienvenido a AprendeCode.
             </div>
         </div>
+=======
+<div class="login-container">
+    <div class="login-logo">
+        <img src="/img/logo.png" alt="Logo" style="max-width: 150px;">AprendeCode
+    </div>
+    <form id="registroForm">
+        <div class="mb-3">
+            <label for="inputNombre" class="form-label">Nombre</label>
+            <input type="text" class="form-control" id="inputNombre" placeholder="Nombre" required>
+        </div>
+        <div class="mb-3">
+            <label for="inputEmail" class="form-label">Correo electrónico</label>
+            <input type="email" class="form-control" id="inputEmail" placeholder="nombre@ejemplo.com" required>
+        </div>
+        <div class="mb-3">
+            <label for="inputPassword" class="form-label">Contraseña</label>
+            <input type="password" class="form-control" id="inputPassword" placeholder="Contraseña" required>
+        </div>
+        <div class="mb-3">
+            <label for="inputConfirmPassword" class="form-label">Confirmar Contraseña</label>
+            <input type="password" class="form-control" id="inputConfirmPassword" placeholder="Confirmar Contraseña"
+                   required>
+        </div>
+        <div class="d-grid gap-2">
+            <button type="submit" class="btn btn-primary">Registrarse</button>
+            <a href="sesion.html" class="btn btn-outline-secondary">Iniciar sesión</a>
+        </div>
+    </form>
+
+    <div id="registroExitosoMensaje" class="mensaje-exitoso">
+        ¡Registro exitoso! Bienvenido a AprendeCode.
+>>>>>>> 6b5392eb88c0ebb3956d6b3a3102738ecf0910d6
     </div>
 
+<<<<<<< HEAD
     <!-- Bootstrap JavaScript (CDN) -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0YexJezQYimf6S+858rXFCyS+5BPkJSLmF"
@@ -184,6 +236,26 @@
             }, 3000); // 3000 milisegundos = 3 segundos
         });
     </script>
+=======
+<script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0YexJezQYimf6S+858rXFCyS+5BPkJSLmF"
+    crossorigin="anonymous"></script>
+
+<script>
+    document.getElementById('registroForm').addEventListener('submit', function (event) {
+        event.preventDefault();
+
+        document.getElementById('registroForm').style.display = 'none';
+
+        var mensajeExito = document.getElementById('registroExitosoMensaje');
+        mensajeExito.style.display = 'block';
+        setTimeout(function () {
+            window.location.href = "../index.html";
+        }, 3000);
+    });
+</script>
+>>>>>>> 6b5392eb88c0ebb3956d6b3a3102738ecf0910d6
 
 </body>
 
